@@ -3,6 +3,7 @@
     <h1 class="title">Login</h1>
   </ion-header-bar>
   <ion-content>
+  <div class="loginBackground">
     <div class="list">
       <label class="item item-input item-stacked-label">
         <span class="input-label">Email</span>
@@ -21,9 +22,13 @@
       <button class="button button-stable button-block" ui-sref="reset-password">
         Can't remember my password
       </button>
+      <!--
       <button class="button button-stable button-block" ui-sref="signup">
         Sign Up
       </button>
+      -->
+      <p class="signUpReminder" ui-sref="signup"><a>Don't have an account? Sign up.</a></p>
     </div>
+  </div>
   </ion-content>
 </ion-view>

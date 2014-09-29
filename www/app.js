@@ -95,7 +95,7 @@ angular.module('MyApp', [
     });
   });
 })
-.constant('FIREBASE_ROOT', 'https://myapp.firebaseio.com');
+.constant('FIREBASE_ROOT', 'https://noticeapp.firebaseio.com');
 
 angular.module('MyApp.services', []);
 angular.module('MyApp.directives', []);
