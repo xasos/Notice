@@ -1,4 +1,6 @@
 {
-  "name": "Notice",
-  "app_id": ""
+  "name": "MyApp",
+  "email": "",
+  "app_id": "",
+  "package_name": ""
 }
