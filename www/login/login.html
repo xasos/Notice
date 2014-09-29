@@ -15,14 +15,14 @@
       </label>
     </div>
     <div class="padding">
-      <button class="button button-positive button-block" ng-click="login()">Log in</button>
+      <button class="button button-positive button-outline loginButton" ng-click="login()">Log in</button>
       <div class="error" ng-if="errorMessage" ng-bind="errorMessage">
       </div>
       <br><br><br>
+      <!--
       <button class="button button-stable button-block" ui-sref="reset-password">
         Can't remember my password
       </button>
-      <!--
       <button class="button button-stable button-block" ui-sref="signup">
         Sign Up
       </button>

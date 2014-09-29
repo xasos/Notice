@@ -1,6 +1,9 @@
 .signUpReminder {
 	text-align: center;
 }
-.loginBackground {
+/* .loginBackground {
 	background: #ecf0f1;
+} */
+loginButton {
+text-align: center;
 }
