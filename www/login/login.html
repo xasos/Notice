@@ -1,21 +1,20 @@
 <ion-view>
-  <ion-header-bar class="bar-dark">
-    <h1 class="title">Login</h1>
-  </ion-header-bar>
-  <ion-content>
+  <ion-content class="login">
+  <h1 class="titleText">Notice</h1>
+  <h2 class="subtitleText">The easy way to stay up-to-date with school activites</h2>
   <div class="loginBackground">
     <div class="list">
       <label class="item item-input item-stacked-label">
         <span class="input-label">Email</span>
         <input type="email" placeholder="Email" ng-model="user.email">
-      </label>
+      </label> 
       <label class="item item-input item-stacked-label">
         <span class="input-label">Password</span>
         <input type="password" placeholder="Password" ng-model="user.password">
       </label>
     </div>
     <div class="padding">
-      <button class="button button-positive button-outline loginButton" ng-click="login()">Log in</button>
+      <button class="button button-positive button-full button-outline" ng-click="login()">Log in</button>
       <div class="error" ng-if="errorMessage" ng-bind="errorMessage">
       </div>
       <br><br><br>

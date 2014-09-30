@@ -4,6 +4,33 @@
 /* .loginBackground {
 	background: #ecf0f1;
 } */
-loginButton {
+.button button-positive button-full button-outline {
 text-align: center;
+margin-bottom: 0px !important;
+}
+
+.signUpReminder {
+	
+}
+
+.titleText {
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 300;
+	text-align: center !important;
+	margin-bottom: 5px !important;
+	margin-top: 90px !important;
+	font-size: 4em;
+}
+
+.subtitleText {
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 300;
+	text-align: center !important;
+	margin-bottom: 20px !important;
+	margin-top: 0px !important;
+	font-size: 1.5em;
+}
+
+.login {	
+	background-image: url("http://38.media.tumblr.com/6eac028da1d1213861c274c1f98e4586/tumblr_nchz8vf3sG1qfirfao1_1280.jpg");
 }
