@@ -4,13 +4,16 @@
 /* .loginBackground {
 	background: #ecf0f1;
 } */
-.button button-positive button-full button-outline {
-text-align: center;
-margin-bottom: 0px !important;
+.loginButton {
+	width: 120px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 0px !important;
+	margin: 10px auto 0px auto;
 }
 
 .signUpReminder {
-	
+	margin-top: 0px !important;
 }
 
 .titleText {
