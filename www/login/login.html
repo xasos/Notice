@@ -1,23 +1,20 @@
 <ion-view>
-  <ion-content class="login">
+  <ion-content class="login" content scroll="false">
   <h1 class="titleText">Notice</h1>
   <h2 class="subtitleText">The easy way to stay up-to-date with school activites</h2>
   <div class="loginBackground">
     <div class="list">
       <label class="item item-input item-stacked-label">
-        <span class="input-label">Email</span>
-        <input type="email" placeholder="Email" ng-model="user.email">
+        <input type="email" class="loginDetail" placeholder="Email" ng-model="user.email">
       </label> 
       <label class="item item-input item-stacked-label">
-        <span class="input-label">Password</span>
-        <input type="password" placeholder="Password" ng-model="user.password">
+        <input type="password" class="loginDetail" placeholder="Password" ng-model="user.password">
       </label>
     </div>
     <div class="padding">
       <button class="button button-positive button-outline loginButton" ng-click="login()">Log in</button>
       <div class="error" ng-if="errorMessage" ng-bind="errorMessage">
       </div>
-      <br><br><br>
       <!--
       <button class="button button-stable button-block" ui-sref="reset-password">
         Can't remember my password
@@ -26,7 +23,8 @@
         Sign Up
       </button>
       -->
-      <p class="signUpReminder" ui-sref="signup"><a>Don't have an account? Sign up.</a></p>
+<!--       <a class="signUpReminder" ui-sref="signup">Don't have an account? Sign up.</a>
+ -->      <p class="signUpReminder" ui-sref="signup"><a>Don't have an account? Sign up.</a></p>
     </div>
   </div>
   </ion-content>

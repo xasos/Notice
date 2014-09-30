@@ -13,7 +13,10 @@
 }
 
 .signUpReminder {
-	margin-top: 0px !important;
+	margin-top: 4px !important;
+	text-align: center !important;
+	color: #000;
+	text-decoration: none;
 }
 
 .titleText {
@@ -36,4 +39,14 @@
 
 .login {	
 	background-image: url("http://38.media.tumblr.com/6eac028da1d1213861c274c1f98e4586/tumblr_nchz8vf3sG1qfirfao1_1280.jpg");
+}
+
+.notif {
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
+	text-align: center !important;
+}
+
+.loginDetail {
+	text-align: center;
 }
