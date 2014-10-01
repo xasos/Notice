@@ -7,15 +7,16 @@
       <label class="item item-input item-stacked-label">
         <span class="input-label">Email</span>
         <input type="email" placeholder="me@gmail.com" ng-model="user.email">
+        <span class="input-label">First Name</span>
         <input type="text" placeholder="First Name">
+        <span class="input-label">Last Name</span>
         <input type="text" placeholder="Last Name">
       </label>
     </div>
     <div class="padding">
-      <button class="button button-positive button-block" ng-click="signup()">Sign Up</button>
+      <button class="button button-positive button-block signUp" ng-click="signup()">Sign Up</button>
       <div class="error" ng-if="errorMessage" ng-bind="errorMessage">
       </div>
-      <br><br><br>
       <button class="button button-stable button-block" ui-sref="login">
         I have an account
       </button>
