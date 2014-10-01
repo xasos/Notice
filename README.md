@@ -20,7 +20,7 @@ $ ionic build <platform>
 $ ionic emulate <platform>
 ```
 
-Of course, this app is also already on the web [here](https://notice.herokuapp.com/).
+This app is also available on the web [here](https://notice.herokuapp.com/).
 
 ## License
 [MIT License](LICENSE)
