@@ -4614,7 +4614,9 @@ input, button, select, textarea {
 .item-stacked-label {
   display: block;
   background-color: transparent;
-  box-shadow: none; }
+  box-shadow: none;
+  border: none;
+ }
   .item-stacked-label .input-label, .item-stacked-label .icon {
     display: inline-block;
     padding: 4px 0;
