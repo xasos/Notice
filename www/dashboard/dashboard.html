@@ -8,8 +8,8 @@
   <div class="card">
       <div class="item item-text-wrap">
         <h1 class="notif">Send a Notification</h1>
-        <input class="item item-input"></input><br>
-        <button class="button button-outline button-outline">Submit</button>
+        <input class="item item-input" ng-model="message"></input><br>
+        <button class="button button-outline button-outline" ng-click="postNotification(message)">Submit</button>
       </div>
   </div>
 
