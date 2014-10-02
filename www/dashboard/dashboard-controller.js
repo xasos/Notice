@@ -8,7 +8,7 @@ angular.module('MyApp.controllers')
   	$scope.message = "";
   	$scope.postNotification = function(message) {
   		// textMessages.$add({message: message, createdBy: email, tag: tag});
-  		textMessages.$add({message: message});
-  		message = "";
+  		textMessages.$add({message: message, createdBy: $scope.email});
+  		$scope.message = "";
   	};
 });
