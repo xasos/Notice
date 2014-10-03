@@ -3,30 +3,29 @@
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
   <ion-content class="has-header padding">
+<!--   <ion-refresher>
+  </ion-refresher> -->
 
   <!-- Add notifications -->
   <div class="card">
       <div class="item item-text-wrap">
         <h1 class="notif">Send a Notification</h1>
         <input class="item item-input" ng-model="message"></input><br>
-        <button class="button button-outline button-outline" ng-click="postNotification(message)">Submit</button>
+        <button class="button button-outline button-outline submitNotif" ng-click="postNotification(message)">Submit</button>
       </div>
   </div>
 
   <!-- List notifications -->
-  <div class="list card">
-   <!--     ng-repeat="p in posts" -->
-  <div class="item item-avatar" ng-repeat="p in textMessages">
+  <div class="list card" ng-repeat="n in textMessages">
+  <div class="item item-avatar">
       <img src="sample.jpg">
-      <h2>Mr. Smith</h2>
-      <p>September 29, 2014</p>
+      <h2>{{n.createdBy}}</h2>
+      <p>{{n.dateCreated}}</p>
     </div>
     <div class="item item-body">
-      <img class="full-image" ng-src="{{delorean.jpg}}">
-      <p>
-        This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-        the content is from a card-body consisting of an image and paragraph text. The footer
-        consists of tabs, icons aligned left, within the card-footer.
+      <p> 
+        <!-- assign a class to this and button pull left colored box with tag-->
+      {{n.message}}
       </p>
     </div>
   </div>
