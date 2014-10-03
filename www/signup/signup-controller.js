@@ -5,7 +5,9 @@ angular.module('MyApp.controllers')
     var password = Signup.randomPassword();
 
     $scope.user = {
-      email: ''
+      email: '',
+      firstName: '',
+      lastName: ''
     };
     $scope.errorMessage = null;
 
