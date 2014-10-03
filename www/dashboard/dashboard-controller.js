@@ -18,6 +18,10 @@ angular.module('MyApp.controllers')
   		$scope.textMessages.$add({message: message, createdBy: $scope.email, dateCreated: Date.now()});
   		$scope.message = "";
   	};  	 	  	
+
+  	$scope.getGravatar = function($id) {
+  		Return BASE_URL + md5.createHash(textMessages.$id.createdBy);
+  	}
 });
 
 //change textmessages to notifs
