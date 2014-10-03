@@ -10,8 +10,8 @@ angular.module('MyApp.controllers')
 
   	// this needs to be done for the person that created the url (push to firebase?)
   	$scope.hashedEmail = md5.createHash($scope.email);
-  	$scope.gravatarURL = BASE_URL + $scope.hashedEmail;
-  	console.log($scope.gravatarURL);
+  // 	$scope.gravatarURL = BASE_URL + $scope.hashedEmail;
+  // 	console.log($scope.gravatarURL);
 
   	$scope.postNotification = function(message) {
   		// textMessages.$add({tag: tag});
