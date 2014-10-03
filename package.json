@@ -6,11 +6,12 @@
     "type": "git"
   },
   "dependencies": {
+    "angular-md5": "^0.1.7",
+    "express": "4.8.4",
     "gulp": "^3.5.6",
-    "gulp-sass": "^0.7.1",
     "gulp-concat": "^2.2.0",
     "gulp-jshint": "^1.6.3",
-    "express": "4.8.4"
+    "gulp-sass": "^0.7.1"
   },
   "devDependencies": {
     "karma": "^0.12.16",

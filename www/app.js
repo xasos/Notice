@@ -2,6 +2,7 @@
 
 angular.module('MyApp', [
   'ionic',
+  'angular-md5',
   'firebase',
   'MyApp.services',
   'MyApp.directives',
