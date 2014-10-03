@@ -1,7 +1,7 @@
 'use strict';
 //([\._a-zA-Z0-9-]+@d211.org)
-angular.module('MyApp.controllers').controller('LoginCtrl', 
-  function($scope, $state, $ionicLoading, Auth, User) {
+angular.module('MyApp.controllers')
+.controller('LoginCtrl', function($scope, $state, $ionicLoading, Auth, User) {
     $scope.user = {
       email: '',
       password: ''
