@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('MyApp.controllers').controller('SignupCtrl', 
-  function($scope, $q, $state, $ionicLoading, Auth, User, Signup) {
+angular.module('MyApp.controllers')
+.controller('SignupCtrl', function($scope, $q, $state, $ionicLoading, Auth, User, Signup) {
     var password = Signup.randomPassword();
 
     $scope.user = {
