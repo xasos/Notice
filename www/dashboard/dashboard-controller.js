@@ -16,7 +16,7 @@ angular.module('MyApp.controllers')
   	$scope.postNotification = function(message) {
   		// textMessages.$add({tag: tag});
   		$scope.textMessages.$add({message: message, createdBy: $scope.email, dateCreated: Date.now()});
-  		$scope.message = "";
+  		$scope.message = null;
   	};  	 	  	
 
   	//$scope.getGravatar = function($id) {
