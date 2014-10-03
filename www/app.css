@@ -65,9 +65,9 @@
 }
 .notificationText {
 	font-family: 'Oxygen', sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 	text-align: center;
-	font-size:1.5em !important;
+	font-size:1.3em !important;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
