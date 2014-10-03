@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('MyApp.controllers')
-.constant('BASE_URL', 'http://www.gravatar.com/avatar/')
+//.constant('BASE_URL', 'http://www.gravatar.com/avatar/')
 .controller('DashboardCtrl', function($firebase, $scope, Auth, md5) {
   	var noticeRef = new Firebase('https://noticeapp.firebaseio.com/notifications');
   	$scope.textMessages = $firebase(noticeRef);  	
@@ -19,9 +19,9 @@ angular.module('MyApp.controllers')
   		$scope.message = "";
   	};  	 	  	
 
-  	$scope.getGravatar = function($id) {
-  		Return BASE_URL + md5.createHash(textMessages.$id.createdBy);
-  	}
+  	//$scope.getGravatar = function($id) {
+  	//	Return BASE_URL + md5.createHash(textMessages.$id.createdBy);
+  	//};
 });
 
 //change textmessages to notifs
