@@ -63,3 +63,8 @@
 	margin: 0 auto;
 	margin-bottom: 0px !important;
 }
+.notificationText {
+	text-align: center;
+	font-size:150%;
+	
+}
