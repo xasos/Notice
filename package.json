@@ -1,6 +1,6 @@
 {
   "name": "Notice",
-  "version": "0.0.1",
+  "version": "0.1",
   "description": "School Announcement Push Notification Service.",
   "repository": {
     "type": "git"
