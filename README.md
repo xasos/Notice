@@ -9,7 +9,7 @@ Built as part of the App Development Course (M257).
 
 **NOTICE**: Not complete, under active development.
 
-## How to Get Started
+## Get Started
 ```sh
 $ git clone https://github.com/xasos/Notice
 $ cd Notice
