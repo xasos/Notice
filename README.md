@@ -3,7 +3,7 @@ Notice
 
 ## What is Notice?
 
-Push notification system for school/club announcements. Features tagging and push notifications directly to the student.
+Push notification system for school/club announcements. Features announcement tagging and push notifications directly to the student.
 
 Built as part of the App Development Course (M257).
 
