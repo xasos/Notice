@@ -3,16 +3,21 @@
     <h1 class="title">Sign Up</h1>
   </ion-header-bar>
   <ion-content>
-    <div class="list">
+    <div class="list">      
       <label class="item item-input item-stacked-label">
-        <span class="input-label">Email</span>
-        <input type="email" placeholder="me@gmail.com" ng-model="user.email">
         <span class="input-label">First Name</span>
         <input type="text" placeholder="First Name" ng-model="user.firstName">
+      </label>        
+      <label class="item item-input item-stacked-label">
         <span class="input-label">Last Name</span>
         <input type="text" placeholder="Last Name" ng-model="user.lastName">
       </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Email</span>
+        <input type="email" placeholder="me@gmail.com" ng-model="user.email">
+      </label>      
     </div>
+    
     <div class="padding">
       <button class="button button-positive button-block signUp" ng-click="signup()">Sign Up</button>
       <div class="error" ng-if="errorMessage" ng-bind="errorMessage">

@@ -17,7 +17,7 @@ angular.module('MyApp.controllers')
       $ionicLoading.show({
         template: 'Please wait...'
       });
-
+//Auth.firebaseSimpleLogin.getCurrentUser().$add({first: })
       createAuthUser().then(sendPasswordResetEmail)
                       .then(login)
                       .then(createMyAppUser)
