@@ -3,7 +3,8 @@
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
   <ion-content class="has-header padding">
-<!--   <ion-refresher>
+ <!--  <ion-refresher
+    on-refresh="refresh()">
   </ion-refresher> -->
 
   <!-- Add notifications -->
@@ -14,7 +15,7 @@
         <button class="button button-outline button-outline submitNotif" ng-click="postNotification(message)">Submit</button>
       </div>
   </div>
-
+ 
   <!-- List notifications -->
   <div class="list card" ng-repeat="n in notifications | orderBy: 'dateCreated':true">
   <div class="item item-avatar">

@@ -32,6 +32,10 @@ angular.module('MyApp.controllers')
   	//$scope.getGravatar = function($id) {
   	//	Return BASE_URL + md5.createHash(notifications.$id.createdBy);
   	//};
+
+    // $scope.refresh = function() {
+    //   $scope.$broadcast('scroll.refreshComplete');
+    // };
 });
 
 //change textmessages to notifs
