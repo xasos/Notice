@@ -17,15 +17,17 @@
   </div>
  
   <!-- List notifications -->
-  <div class="list card" ng-repeat="n in notifications | orderBy:'dateCreated':reverse">
-  <div class="item item-avatar">
+  <div class="list card" ng-repeat="n in notifications | orderBy:dateCreated:reverse">
+    <div class="item item-avatar">
       <img ng-src="{{n.gravatarURL}}"></img>
       <h2>{{n.createdBy}}</h2>
       <p>{{n.dateCreated | date:'MMMM d, yyyy'}}</p>
     </div>
+    <div class="tagName">
+      
+    </div>
     <div class="item item-body">
-      <p class="notificationText"> 
-        <!-- assign a class to this and button pull left colored box with tag-->
+      <p class="notificationText">
       {{n.message}}
       </p>
     </div>
