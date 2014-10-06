@@ -19,7 +19,7 @@
   <!-- List notifications -->
   <div class="list card" ng-repeat="n in notifications | orderBy: 'dateCreated':true">
   <div class="item item-avatar">
-      <img ng-src="{{gravatarURL}}"></img>
+      <img ng-src="{{n.gravatarURL}}"></img>
       <h2>{{n.createdBy}}</h2>
       <p>{{n.dateCreated | date:'MMMM d, yyyy'}}</p>
     </div>
