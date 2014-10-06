@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.mycompany.myapp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>MyApp</name>
+<widget id="com.notice.notice" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Notice</name>
   <description>
-    MyApp description
+    School Announcement Push Notification Service.
   </description>
-  <author email="hi@mycompany.com" href="http://mycompany.com">
+  <author email="noreply@notice.herokuapp.com" href="http://notice.herokuapp.com">
     Your Name
   </author>
   <content src="index.html"/>
