@@ -44,6 +44,7 @@ angular.module('MyApp.controllers')
     }
 
     function createMyAppUser(authUser) {
+      User.addName(user.firstName, user.lastName);
       return User.create(authUser.uid, authUser.email);
     }
 
