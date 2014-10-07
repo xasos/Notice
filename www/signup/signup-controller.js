@@ -40,12 +40,12 @@ angular.module('MyApp.controllers')
     }
 
     function login(authUser) {
+      User.addName(user.firstName, user.lastName);
+      console.log("test");
       return Auth.login(authUser.email, password);
     }
 
     function createMyAppUser(authUser) {
-      User.addName(user.firstName, user.lastName);
-      console.log("test");
       return User.create(authUser.uid, authUser.email);
     }
 
