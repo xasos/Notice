@@ -33,5 +33,3 @@ angular.module('MyApp.controllers')
     //   $scope.$broadcast('scroll.refreshComplete');
     // };
 });
-
-//http://momentjs.com/ for dates
