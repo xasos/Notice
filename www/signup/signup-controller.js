@@ -40,7 +40,7 @@ angular.module('MyApp.controllers')
     }
 
     function login(authUser) {
-      User.addName(user.firstName, user.lastName);
+      User.addName($scope.user.firstName, $scope.user.lastName);
       console.log("test");
       return Auth.login(authUser.email, password);
     }
