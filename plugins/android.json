@@ -23,13 +23,13 @@
     },
     "installed_plugins": {
         "com.ionic.keyboard": {
-            "PACKAGE_NAME": "com.mycompany.myapp"
+            "PACKAGE_NAME": "com.notice.notice"
         },
         "org.apache.cordova.console": {
-            "PACKAGE_NAME": "com.mycompany.myapp"
+            "PACKAGE_NAME": "com.notice.notice"
         },
         "org.apache.cordova.device": {
-            "PACKAGE_NAME": "com.mycompany.myapp"
+            "PACKAGE_NAME": "com.notice.notice"
         }
     },
     "dependent_plugins": {}
