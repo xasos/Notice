@@ -16,6 +16,7 @@ $ cd Notice
 $ ionic serve
 
 # To build natively
+$ ionic add <platform>
 $ ionic build <platform>
 $ ionic emulate <platform>
 ```
