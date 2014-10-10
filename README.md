@@ -3,7 +3,7 @@ Notice
 
 ## What is Notice?
 
-Push notification system for school/club announcements. Features announcement tagging and push notifications directly to the student.
+Notice is a push notification system for school/club announcements built in AngularJS/Ionic. Features announcements by club/activity and push notifications.
 
 Built as part of the App Development Course (M257).
 
