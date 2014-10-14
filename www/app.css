@@ -77,5 +77,8 @@
 
 .footer {
 	margin-bottom: 5px;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 300;
+	text-align: center !important;
 }
 
