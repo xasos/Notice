@@ -25,7 +25,7 @@ angular.module('MyApp.controllers')
   		// 	$scope.message = null;
   		// }
 
-  		$scope.notifications.$add({message: message, createdBy: $scope.email, gravatarURL: $scope.gravatarURL, dateCreated: Date.now()});
+  		$scope.notifications.$add({message: message, createdBy: $scope.email, gravatarURL: $scope.gravatarURL, dateCreated: Date.now(), tag: "hello"});
   		$scope.message = null;
       console.log($scope.activityName);
   	};
