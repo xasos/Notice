@@ -5,7 +5,7 @@
     School Announcement Push Notification Service.
   </description>
   <author email="noreply@notice.herokuapp.com" href="http://notice.herokuapp.com">
-    Your Name
+    Notice Team
   </author>
   <content src="index.html"/>
   <access origin="*"/>

@@ -10,17 +10,17 @@
         <h1 class="notif">Send a Notification</h1>
         <input class="item item-input loginDetail" ng-model="message"></input><br>
         
-        <div>
-          <form action="">
-            <select name="cars">
-            <option value="volvo">Math Team</option>
-            <option value="saab">Basketball</option>
-            <option value="fiat">Horticulture Club</option>
-            <option value="audi">Science Olympiad</option>
+        <div class="activityPicker">
+          <form ng-submit="postNotification(message)">
+            <select name="activities" ng-model="activityName" ng-options="">
+              <option value="math_team">Math Team</option>
+              <option value="basketball">Basketball</option>
+              <option value="hoticulture">Horticulture Club</option>
+              <option value="science_olympiad">Science Olympiad</option>
             </select>
-          </form>
-          
-          <button class="button button-outline button-outline submitNotif" id="postNotifButton" ng-click="postNotification(message)">Submit</button>
+
+            <button class="button button-outline button-outline submitNotif" id="postNotifButton">Submit</button>
+          </form>        
         </div>
       </div>
   </div>
