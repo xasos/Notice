@@ -31,16 +31,19 @@
       <img ng-src="{{n.gravatarURL}}"></img>
       <h2>{{n.createdBy}}</h2>
       <p>{{n.dateCreated | date:'MMMM d, yyyy'}}</p>
+      <!--
       <div class="tagName">
         {{n.tag}}
-      </div>
+      </div> -->
+      
+      <button class="button button-small button-assertive">
+        {{n.tag}}
+      </button>
     </div>
     <div class="item item-body">
-      <button class="button button-small button-assertive">
+      <p class="notificationText">
         {{n.message}}
-      </button>
-      <!--
-      <p class="notificationText"> -->
+      </p>
     </div>
   </div>
   <div class ="footer">
