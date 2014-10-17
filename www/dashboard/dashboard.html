@@ -29,7 +29,7 @@
   <div class="list card" ng-repeat="n in notifications | orderBy:dateCreated:reverse">
     <div class="item item-avatar">
       <img ng-src="{{n.gravatarURL}}"></img>
-      <h2>{{n.createdBy}}</h2>
+      <h2 id="personName">{{n.createdBy}}</h2>
       <p id="tagDate">{{n.dateCreated | date:'MMMM d, yyyy'}}</p>
      <button class="button button-small button-assertive" id="tagName">
         {{n.tag}}
