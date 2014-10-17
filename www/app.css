@@ -69,6 +69,7 @@
 	margin-bottom: 10px;
 }
 .tagName {
+	margin: 0 0 0 0;
 	float: right;
 }
 .postNotifButton {
