@@ -30,7 +30,7 @@
     <div class="item item-avatar">
       <img ng-src="{{n.gravatarURL}}"></img>
       <h2>{{n.createdBy}}</h2>
-      <p>{{n.dateCreated | date:'MMMM d, yyyy'}}</p>
+      <p id="tagDate">{{n.dateCreated | date:'MMMM d, yyyy'}}</p>
      <button class="button button-small button-assertive" id="tagName">
         {{n.tag}}
       </button>
