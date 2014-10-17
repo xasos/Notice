@@ -48,18 +48,22 @@
 .loginDetail {
 	text-align: center;
 }
+
 .signUp {
 	margin-bottom: 5px;
 }
+
 .loginList {
 	margin: 0% 20%;
 }
+
 .submitNotif {
 	width: 90px;
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 0px !important;
 }
+
 .notificationText {
 	font-family: 'Oxygen', sans-serif;
 	font-weight: 300;
@@ -68,10 +72,12 @@
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
 #tagName {
 	margin: 0 0 0 0;
 	float: right;
 }
+
 .postNotifButton {
 	float: right;
 	margin: 0px 0px 0px 0px !important;
@@ -83,7 +89,12 @@
 	font-weight: 300;
 	text-align: center !important;
 }
+
 #tagDate {
 	margin: 0 0 0 0;
+}
+
+#personName {
+	text-size: 120%;
 }
 
