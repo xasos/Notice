@@ -26,10 +26,9 @@ angular.module('MyApp.controllers')
   		// 	$scope.message = null;
   		// }
 
-  		$scope.notifications.$add({message: message, createdBy: $scope.email, gravatarURL: $scope.gravatarURL, dateCreated: Date.now(), tag: "hello"});
+  		$scope.notifications.$add({message: message, createdBy: $scope.email, gravatarURL: $scope.gravatarURL, dateCreated: Date.now(), tag: $scope.clubs[Math.floor(Math.random()*5)]});
   		$scope.message = null;
-      console.log($scope.activityName);
-      console.log(Math.floor(Math.random()*4));
+        console.log($scope.activityName);
   	};
 
   	$scope.getGravatar = function(md5) {
