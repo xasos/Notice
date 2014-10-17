@@ -10,6 +10,7 @@ angular.module('MyApp.controllers')
   	$scope.email = Auth.currentUser.email;
   	$scope.message = "";
     $scope.activityName = "";
+    $scope.clubs = ["Math Team", "Basketball", "Horticulture Club", "Science Olympiad"]
   	
   	$scope.gravatarURL = 'http://www.gravatar.com/avatar/' + md5.createHash($scope.email); 
 
@@ -28,6 +29,7 @@ angular.module('MyApp.controllers')
   		$scope.notifications.$add({message: message, createdBy: $scope.email, gravatarURL: $scope.gravatarURL, dateCreated: Date.now(), tag: "hello"});
   		$scope.message = null;
       console.log($scope.activityName);
+      console.log(Math.floor(Math.random()*4));
   	};
 
   	$scope.getGravatar = function(md5) {
