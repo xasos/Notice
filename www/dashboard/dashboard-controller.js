@@ -10,9 +10,9 @@ angular.module('MyApp.controllers')
   	$scope.email = Auth.currentUser.email;
   	$scope.message = "";
     $scope.activityName = "";
-    $scope.clubs = ["Math Team", "Basketball", "Horticulture Club", "Science Olympiad"]
+    
   	
-$scope.items = [
+$scope.clubs = [
     { id: 1, name: 'Math Teams' },
     { id: 2, name: 'Basketball' },
     { id: 3, name: 'Horticulture Club' },
