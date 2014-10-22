@@ -22,6 +22,14 @@
             <button class="button button-outline button-outline submitNotif" id="postNotifButton">Submit</button>
           </form>        
         </div>
+
+<select id="s1" ng-model="selectedItem" ng-options="item as item.name for item in items" class="ng-pristine ng-valid">
+    <option value="?" selected="selected"></option>
+    <option value="0">foo</option>
+    <option value="1">bar</option>
+    <option value="2">blah</option>
+</select>
+
       </div>
   </div>
  

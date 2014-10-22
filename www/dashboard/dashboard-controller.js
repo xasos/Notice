@@ -12,6 +12,12 @@ angular.module('MyApp.controllers')
     $scope.activityName = "";
     $scope.clubs = ["Math Team", "Basketball", "Horticulture Club", "Science Olympiad"]
   	
+$scope.items = [
+    { id: 1, name: 'foo' },
+    { id: 2, name: 'bar' },
+    { id: 3, name: 'blah' }];
+
+
   	$scope.gravatarURL = 'http://www.gravatar.com/avatar/' + md5.createHash($scope.email); 
 
   	$scope.postNotification = function(message) {
