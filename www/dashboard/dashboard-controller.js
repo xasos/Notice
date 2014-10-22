@@ -13,9 +13,10 @@ angular.module('MyApp.controllers')
     $scope.clubs = ["Math Team", "Basketball", "Horticulture Club", "Science Olympiad"]
   	
 $scope.items = [
-    { id: 1, name: 'foo' },
-    { id: 2, name: 'bar' },
-    { id: 3, name: 'blah' }];
+    { id: 1, name: 'Math Teams' },
+    { id: 2, name: 'Basketball' },
+    { id: 3, name: 'Horticulture Club' },
+    { id: 4, name: 'Science Olympiad'}];
 
 
   	$scope.gravatarURL = 'http://www.gravatar.com/avatar/' + md5.createHash($scope.email); 
