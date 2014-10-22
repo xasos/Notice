@@ -21,7 +21,7 @@ $scope.items = [
 
   	$scope.gravatarURL = 'http://www.gravatar.com/avatar/' + md5.createHash($scope.email); 
 
-  	$scope.postNotification = function(message) {
+  	$scope.postNotification = function(message, tag) {
   		// notifications.$add({tag: tag});
   		  		// if ($scope.message.length == 0) {
   		// 	$ionicLoading.show({
@@ -33,7 +33,7 @@ $scope.items = [
   		// 	$scope.message = null;
   		// }
 
-  		$scope.notifications.$add({message: message, createdBy: $scope.email, gravatarURL: $scope.gravatarURL, dateCreated: Date.now(), tag: $scope.clubs[Math.floor(Math.random()*5)]});
+  		$scope.notifications.$add({message: message, createdBy: $scope.email, gravatarURL: $scope.gravatarURL, dateCreated: Date.now(), tag: tag});
   		$scope.message = null;
   	};
 
