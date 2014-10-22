@@ -12,25 +12,27 @@
         
         <div class="activityPicker">
           <form ng-submit="postNotification(message)">
+            <select id="s1" ng-model="selectedItem" ng-options="item as item.name for item in items" class="ng-pristine ng-valid">
+              <option value="?" selected="selected"></option>
+              <option value="0">asd</option>
+              <option value="1">sdsdr</option>
+              <option value="2">basd</option>
+              <option value="3">blzxcah</option>
+            </select>
+            <button class="button button-outline button-outline submitNotif" id="postNotifButton">Submit</button>
+          </form>        
+        </div>
+{{selectedItem.name}}
+
+<!--
             <select name="activities" ng-model="activityName" ng-options="">
               <option value="">Math Team</option>
               <option value="">Basketball</option>
               <option value="">Horticulture Club</option>
               <option value="">Science Olympiad</option>
             </select>
-
-            <button class="button button-outline button-outline submitNotif" id="postNotifButton">Submit</button>
-          </form>        
-        </div>
-
-<select id="s1" ng-model="selectedItem" ng-options="item as item.name for item in items" class="ng-pristine ng-valid">
-    <option value="?" selected="selected"></option>
-    <option value="0">foo</option>
-    <option value="1">bar</option>
-    <option value="2">blah</option>
-    <option value="3">blzxcah</option>
-</select>
-{{selectedItem.name}}
+            -->
+            
       </div>
   </div>
  
