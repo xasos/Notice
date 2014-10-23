@@ -12,18 +12,9 @@
       </label>
     </div>
     <div class="padding">
-      <button class="button button-dark button-outline loginButton" ng-click="login()">Log in</button>
+      <input type="button" class="button button-dark button-outline loginButton" ng-click="login()">Log in</button>
       <div class="error" ng-if="errorMessage" ng-bind="errorMessage"></div>
-      <!--
-      <button class="button button-stable button-block" ui-sref="reset-password">
-        Can't remember my password
-      </button>
-      <button class="button button-stable button-block" ui-sref="signup">
-        Sign Up
-      </button>
-      -->
-<!--       <a class="signUpReminder" ui-sref="signup">Don't have an account? Sign up.</a>
- -->      <p class="signUpReminder" ui-sref="signup"><a>Don't have an account? Sign up.</a></p>
+      <p class="signUpReminder" ui-sref="signup"><a>Don't have an account? Sign up.</a></p>
     </div>
   </div>
   </ion-content>
