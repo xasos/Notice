@@ -11,7 +11,7 @@
         <input type="password" class="loginDetail" placeholder="Password" ng-model="user.password">
       </label>
     </div>
-    <div class="padding">
+    <div class="padding" ui-keypress="{13:'login()'}">
       <button class="button button-dark button-outline loginButton" ng-click="login()">Log in</button>
       <div class="error" ng-if="errorMessage" ng-bind="errorMessage">
       </div>
