@@ -1,7 +1,6 @@
 'use strict';
 
 angular.module('MyApp', [
-  'ui.utils',
   'ionic',
   'angular-md5',
   'firebase',
