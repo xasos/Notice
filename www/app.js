@@ -96,7 +96,16 @@ angular.module('MyApp', [
     });
   });
 })
-.constant('FIREBASE_ROOT', 'https://noticeapp.firebaseio.com');
+.constant('FIREBASE_ROOT', 'https://noticeapp.firebaseio.com')
+.run(function($ionicPlatform, $ionicPopup) {
+        $ionicPlatform.ready(function() {
+            if(typeof analytics !== "undefined") {
+                analytics.startTrackerWithId("UA-56091678-1");
+            } else {
+                console.log("Google Analytics Unavailable");
+            }
+        });
+});
 
 angular.module('MyApp.services', []);
 angular.module('MyApp.directives', []);
