@@ -11,7 +11,7 @@
         <input class="item item-input loginDetail notifSend" ng-model="message"></input><br>
         
         <div class="activityPicker">
-          <form ng-submit="postNotification(message, selectedItem.name)">
+          <form ng-submit="postNotification(message, selectedItem.name, selectedItem.color)">
             <select id="s1" ng-model="selectedItem" ng-options="item as item.name for item in clubs" class="ng-pristine ng-valid">
               <option value="?" selected="selected"></option>
               <option value="0"></option>
