@@ -21,7 +21,7 @@ $scope.clubs = [
 
   	$scope.gravatarURL = 'http://www.gravatar.com/avatar/' + md5.createHash($scope.email); 
 
-  	$scope.postNotification = function(message, tag) {
+  	$scope.postNotification = function(message, tag, color) {
   		// notifications.$add({tag: tag});
   		  		// if ($scope.message.length == 0) {
   		// 	$ionicLoading.show({
@@ -33,7 +33,7 @@ $scope.clubs = [
   		// 	$scope.message = null;
   		// }
 
-  		$scope.notifications.$add({message: message, createdBy: $scope.email, gravatarURL: $scope.gravatarURL, dateCreated: Date.now(), tag: tag});
+  		$scope.notifications.$add({message: message, createdBy: $scope.email, gravatarURL: $scope.gravatarURL, dateCreated: Date.now(), tag: tag, color: color});
   		$scope.message = null;
   	};
 
