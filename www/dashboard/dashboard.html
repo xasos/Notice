@@ -26,7 +26,7 @@
   </div>
  
   <!-- List notifications -->
-  <div class="list card" ng-repeat="n in notifications | orderBy:dateCreated:!reverse">
+  <div class="list card" ng-repeat="n in notifications | orderBy: -dateCreated">
     <div class="item item-avatar">
       <img ng-src="{{n.gravatarURL}}"></img>
       <h2 id="personName">{{n.createdBy}}</h2>
