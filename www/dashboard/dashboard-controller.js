@@ -4,11 +4,9 @@ angular.module('MyApp.controllers')
 .value('BASE_URL', 'https://noticeapp.firebaseio.com/')
 .controller('DashboardCtrl', function($firebase, $scope, Auth, md5) {
     var noticeRef = new Firebase('https://noticeapp.firebaseio.com/notifications');
-  	// var activityRef = new Firebase('https://noticeapp.firebaseio.com/activities');
-   //  $scope.activities = $firebase(activityRef);
-  	$scope.notifications = $firebase(noticeRef);  	
-  	$scope.email = Auth.currentUser.email;
-  	$scope.message = "";
+    $scope.notifications = $firebase(noticeRef);  	
+    $scope.email = Auth.currentUser.email;
+    $scope.message = "";
     $scope.activityName = "";
     
   	
