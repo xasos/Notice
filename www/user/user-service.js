@@ -20,10 +20,10 @@ angular.module('MyApp.services').service('User',
       return users.$child(id).$set({ email: email });
     };
     
-    this.addName = function(firstName, lastName) {
-      var users = $firebase(usersRef);
-      return users.$child(id).$add({ first: firstName, last:lastName });
-    };
+    // this.addName = function(firstName, lastName) {
+    //   var users = $firebase(usersRef);
+    //   return users.$child(id).$add({ first: firstName, last:lastName });
+    // };
     
     this.recordPasswordChange = function() {
       var now = Math.floor(Date.now() / 1000);
