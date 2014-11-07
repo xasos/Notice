@@ -7,6 +7,7 @@ angular.module('MyApp', [
   'MyApp.services',
   'MyApp.directives',
   'MyApp.controllers'
+  'firebase.utils'
 ])
 .config(function($stateProvider, $urlRouterProvider) {
   var resolve = {
