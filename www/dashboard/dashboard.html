@@ -31,8 +31,7 @@
       <img ng-src="{{n.gravatarURL}}"></img>
       <h2 id="personName">{{n.createdBy}}</h2>
       <p id="tagDate">{{n.dateCreated | date:'MMMM d, yyyy'}}</p>
-      {{n.color}}
-      <button class="button button-small" ng-class="{'background-color': '#000000'}" id="tagName">
+      <button class="button button-small" style="background-color: {{n.color}};" id="tagName">
         {{n.tag}}
       </button>
     </div>
