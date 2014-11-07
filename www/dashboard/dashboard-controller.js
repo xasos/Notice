@@ -2,7 +2,7 @@
 
 angular.module('MyApp.controllers')
 .value('BASE_URL', 'https://noticeapp.firebaseio.com/')
-.controller('DashboardCtrl', function($firebase, $scope, Auth, md5, firebase.utils) {
+.controller('DashboardCtrl', function($firebase, $scope, Auth, md5, 'firebase.utils') {
     var noticeRef = new Firebase('https://noticeapp.firebaseio.com/notifications');
     $scope.notifications = $firebase(noticeRef);  	
     $scope.email = Auth.currentUser.email;
