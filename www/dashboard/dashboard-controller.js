@@ -6,6 +6,7 @@ angular.module('MyApp.controllers')
     var noticeRef = new Firebase('https://noticeapp.firebaseio.com/notifications');
     $scope.notifications = $firebase(noticeRef);  	
     $scope.email = Auth.currentUser.email;
+    console.log(Auth.currentUser);
     $scope.message = '';
     $scope.activityName = '';
     
