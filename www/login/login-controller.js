@@ -18,10 +18,10 @@ angular.module('MyApp.controllers')
       Auth.login($scope.user.email, $scope.user.password)
           .then(User.loadCurrentUser)
           .then(redirectBasedOnStatus)
+          .then(console.log($scope.user))
           .catch(handleError);
+          
     };
-    
-    console.log($scope.user);
 
     function redirectBasedOnStatus() {
       $ionicLoading.hide();
