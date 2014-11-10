@@ -6,8 +6,8 @@ angular.module('MyApp.controllers')
     var noticeRef = new Firebase('https://noticeapp.firebaseio.com/notifications');
     $scope.notifications = $firebase(noticeRef);  	
     $scope.email = Auth.currentUser.email;
-    $scope.message = "";
-    $scope.activityName = "";
+    $scope.message = '';
+    $scope.activityName = '""''';
     
     $scope.clubs = [
     { id: 1, name: 'Math Team', color: '#43cee6' },
