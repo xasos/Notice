@@ -16,7 +16,6 @@ angular.module('MyApp.controllers')
       });
  
       Auth.login($scope.user.email, $scope.user.password)
-          .then(console.log(Auth.getCurrentUser()))
           .then(User.loadCurrentUser)
           .then(redirectBasedOnStatus)
           .catch(handleError);
