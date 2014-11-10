@@ -8,12 +8,12 @@
   <div class="card">
       <div class="item item-text-wrap">
         <h1 class="notif">Send a Notification</h1>
-        <input class="item item-input loginDetail notifSend" ng-model="message"></input><br>
+        <input class="item item-input loginDetail notifSend" ng-model="message" ng-minlength=1 /><br>
         
         <div class="activityPicker">
           <form ng-submit="postNotification(message, selectedItem.name, selectedItem.color)">
-            <select id="s1" ng-model="selectedItem" ng-options="item as item.name for item in clubs" class="ng-pristine ng-valid">
-              <option value="?" selected="selected"></option>
+            <select id="s1" ng-model="selectedItem" ng-options="item as item.name for item in clubs" class="ng-pristine ng-valid" required>
+              <option value="?" selected="selected">Select a Club</option>
               <option value="0"></option>
               <option value="1"></option>
               <option value="2"></option>
