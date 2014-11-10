@@ -20,6 +20,8 @@ angular.module('MyApp.controllers')
           .then(redirectBasedOnStatus)
           .catch(handleError);
     };
+    
+    console.log($scope.user);
 
     function redirectBasedOnStatus() {
       $ionicLoading.hide();
