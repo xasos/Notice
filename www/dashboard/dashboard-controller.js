@@ -6,15 +6,14 @@ angular.module('MyApp.controllers')
     var noticeRef = new Firebase('https://noticeapp.firebaseio.com/notifications');
     $scope.notifications = $firebase(noticeRef);  	
     $scope.email = Auth.currentUser.email;
+    $scope.message = "";
     $scope.activityName = "";
     
-  	
-$scope.clubs = [
+    $scope.clubs = [
     { id: 1, name: 'Math Team', color: '#43cee6' },
     { id: 2, name: 'Basketball', color: '#4a87ee' },
     { id: 3, name: 'Horticulture Club', color: '#ef4e3a' },
     { id: 4, name: 'Science Olympiad', color: '#8a6de9'}];
-
 
   	$scope.gravatarURL = 'http://www.gravatar.com/avatar/' + md5.createHash($scope.email); 
 
@@ -27,10 +26,6 @@ $scope.clubs = [
   	$scope.getGravatar = function(md5) {
   		return 'http://www.gravatar.com/avatar/' + notifications.md5;
   	};
-
-    // $scope.refresh = function() {
-    //   $scope.$broadcast('scroll.refreshComplete');
-    // };
 })
 .filter('reverse', function() {
       function toArray(list) {
