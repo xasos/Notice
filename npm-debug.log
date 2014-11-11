@@ -1,0 +1,245 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'firebase-tools' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose cache add [ 'firebase-tools', null ]
+5 verbose cache add name=undefined spec="firebase-tools" args=["firebase-tools",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'firebase-tools',
+6 verbose parsed url   path: 'firebase-tools',
+6 verbose parsed url   href: 'firebase-tools' }
+7 silly lockFile 3fa4b23e-firebase-tools firebase-tools
+8 verbose lock firebase-tools /home/ubuntu/.npm/3fa4b23e-firebase-tools.lock
+9 silly lockFile 3fa4b23e-firebase-tools firebase-tools
+10 silly lockFile 3fa4b23e-firebase-tools firebase-tools
+11 verbose addNamed [ 'firebase-tools', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 59c4bcc4-firebase-tools firebase-tools@
+14 verbose lock firebase-tools@ /home/ubuntu/.npm/59c4bcc4-firebase-tools.lock
+15 silly addNameRange { name: 'firebase-tools', range: '*', hasData: false }
+16 verbose url raw firebase-tools
+17 verbose url resolving [ 'https://registry.npmjs.org/', './firebase-tools' ]
+18 verbose url resolved https://registry.npmjs.org/firebase-tools
+19 info trying registry request attempt 1 at 16:49:24
+20 http GET https://registry.npmjs.org/firebase-tools
+21 http 200 https://registry.npmjs.org/firebase-tools
+22 silly registry.get cb [ 200,
+22 silly registry.get   { date: 'Tue, 11 Nov 2014 16:49:28 GMT',
+22 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+22 silly registry.get     etag: '"19VKP87PD6PLM3M3A0C03GY2N"',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'cache-control': 'max-age=60',
+22 silly registry.get     'content-length': '38350',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     age: '0',
+22 silly registry.get     'x-served-by': 'cache-atl6230-ATL',
+22 silly registry.get     'x-cache': 'MISS',
+22 silly registry.get     'x-cache-hits': '0',
+22 silly registry.get     'x-timer': 'S1415724568.759461,VS0,VE59',
+22 silly registry.get     vary: 'Accept',
+22 silly registry.get     'keep-alive': 'timeout=10, max=50',
+22 silly registry.get     connection: 'Keep-Alive' } ]
+23 silly addNameRange number 2 { name: 'firebase-tools', range: '*', hasData: true }
+24 silly addNameRange versions [ 'firebase-tools',
+24 silly addNameRange   [ '0.0.1',
+24 silly addNameRange     '0.0.2',
+24 silly addNameRange     '0.0.3',
+24 silly addNameRange     '0.0.4',
+24 silly addNameRange     '0.0.5',
+24 silly addNameRange     '0.0.6',
+24 silly addNameRange     '0.1.0',
+24 silly addNameRange     '0.1.1',
+24 silly addNameRange     '0.1.2',
+24 silly addNameRange     '0.1.3',
+24 silly addNameRange     '0.1.4',
+24 silly addNameRange     '0.1.5',
+24 silly addNameRange     '0.1.6',
+24 silly addNameRange     '0.2.0',
+24 silly addNameRange     '0.3.0',
+24 silly addNameRange     '0.4.0',
+24 silly addNameRange     '0.5.0',
+24 silly addNameRange     '1.0.0',
+24 silly addNameRange     '1.0.1',
+24 silly addNameRange     '1.0.2',
+24 silly addNameRange     '1.0.3',
+24 silly addNameRange     '1.0.4',
+24 silly addNameRange     '1.0.5',
+24 silly addNameRange     '1.0.6',
+24 silly addNameRange     '1.1.0',
+24 silly addNameRange     '1.1.1',
+24 silly addNameRange     '1.1.2',
+24 silly addNameRange     '1.1.3',
+24 silly addNameRange     '1.1.4' ] ]
+25 verbose addNamed [ 'firebase-tools', '1.1.4' ]
+26 verbose addNamed [ '1.1.4', '1.1.4' ]
+27 silly lockFile d4dacdfa-firebase-tools-1-1-4 firebase-tools@1.1.4
+28 verbose lock firebase-tools@1.1.4 /home/ubuntu/.npm/d4dacdfa-firebase-tools-1-1-4.lock
+29 silly lockFile f064f30d-e-tools-firebase-tools-1-1-4-tgz https://registry.npmjs.org/firebase-tools/-/firebase-tools-1.1.4.tgz
+30 verbose lock https://registry.npmjs.org/firebase-tools/-/firebase-tools-1.1.4.tgz /home/ubuntu/.npm/f064f30d-e-tools-firebase-tools-1-1-4-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/firebase-tools/-/firebase-tools-1.1.4.tgz',
+31 verbose addRemoteTarball   '56c4beec90c585cc5a5f7f70dfbc111a8f3d8ccd' ]
+32 info retry fetch attempt 1 at 16:49:24
+33 verbose fetch to= /home/ubuntu/tmp/npm-30728-rFUxb8tO/1415724564414-0.30012150784023106/tmp.tgz
+34 http GET https://registry.npmjs.org/firebase-tools/-/firebase-tools-1.1.4.tgz
+35 http 200 https://registry.npmjs.org/firebase-tools/-/firebase-tools-1.1.4.tgz
+36 verbose tar unpack /home/ubuntu/tmp/npm-30728-rFUxb8tO/1415724564414-0.30012150784023106/tmp.tgz
+37 silly lockFile 7c1ebe6f-4414-0-30012150784023106-package tar:///home/ubuntu/tmp/npm-30728-rFUxb8tO/1415724564414-0.30012150784023106/package
+38 verbose lock tar:///home/ubuntu/tmp/npm-30728-rFUxb8tO/1415724564414-0.30012150784023106/package /home/ubuntu/.npm/7c1ebe6f-4414-0-30012150784023106-package.lock
+39 silly lockFile aa870a00-4414-0-30012150784023106-tmp-tgz tar:///home/ubuntu/tmp/npm-30728-rFUxb8tO/1415724564414-0.30012150784023106/tmp.tgz
+40 verbose lock tar:///home/ubuntu/tmp/npm-30728-rFUxb8tO/1415724564414-0.30012150784023106/tmp.tgz /home/ubuntu/.npm/aa870a00-4414-0-30012150784023106-tmp-tgz.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry package.json
+43 silly gunzTarPerm extractEntry .npmignore
+44 silly gunzTarPerm extractEntry README.md
+45 silly gunzTarPerm extractEntry CHANGELOG.md
+46 silly gunzTarPerm extractEntry bin/firebase
+47 silly gunzTarPerm extractEntry lib/api.js
+48 silly gunzTarPerm extractEntry lib/app.js
+49 silly gunzTarPerm extractEntry lib/auth.js
+50 silly gunzTarPerm extractEntry lib/firebase.js
+51 silly gunzTarPerm extractEntry lib/help.js
+52 silly gunzTarPerm extractEntry lib/upload.js
+53 silly gunzTarPerm extractEntry release.sh
+54 silly lockFile 7c1ebe6f-4414-0-30012150784023106-package tar:///home/ubuntu/tmp/npm-30728-rFUxb8tO/1415724564414-0.30012150784023106/package
+55 silly lockFile 7c1ebe6f-4414-0-30012150784023106-package tar:///home/ubuntu/tmp/npm-30728-rFUxb8tO/1415724564414-0.30012150784023106/package
+56 silly lockFile aa870a00-4414-0-30012150784023106-tmp-tgz tar:///home/ubuntu/tmp/npm-30728-rFUxb8tO/1415724564414-0.30012150784023106/tmp.tgz
+57 silly lockFile aa870a00-4414-0-30012150784023106-tmp-tgz tar:///home/ubuntu/tmp/npm-30728-rFUxb8tO/1415724564414-0.30012150784023106/tmp.tgz
+58 verbose tar pack [ '/home/ubuntu/.npm/firebase-tools/1.1.4/package.tgz',
+58 verbose tar pack   '/home/ubuntu/tmp/npm-30728-rFUxb8tO/1415724564414-0.30012150784023106/package' ]
+59 verbose tarball /home/ubuntu/.npm/firebase-tools/1.1.4/package.tgz
+60 verbose folder /home/ubuntu/tmp/npm-30728-rFUxb8tO/1415724564414-0.30012150784023106/package
+61 silly lockFile 7c1ebe6f-4414-0-30012150784023106-package tar:///home/ubuntu/tmp/npm-30728-rFUxb8tO/1415724564414-0.30012150784023106/package
+62 verbose lock tar:///home/ubuntu/tmp/npm-30728-rFUxb8tO/1415724564414-0.30012150784023106/package /home/ubuntu/.npm/7c1ebe6f-4414-0-30012150784023106-package.lock
+63 silly lockFile 907767ae-firebase-tools-1-1-4-package-tgz tar:///home/ubuntu/.npm/firebase-tools/1.1.4/package.tgz
+64 verbose lock tar:///home/ubuntu/.npm/firebase-tools/1.1.4/package.tgz /home/ubuntu/.npm/907767ae-firebase-tools-1-1-4-package-tgz.lock
+65 silly lockFile 7c1ebe6f-4414-0-30012150784023106-package tar:///home/ubuntu/tmp/npm-30728-rFUxb8tO/1415724564414-0.30012150784023106/package
+66 silly lockFile 7c1ebe6f-4414-0-30012150784023106-package tar:///home/ubuntu/tmp/npm-30728-rFUxb8tO/1415724564414-0.30012150784023106/package
+67 silly lockFile 907767ae-firebase-tools-1-1-4-package-tgz tar:///home/ubuntu/.npm/firebase-tools/1.1.4/package.tgz
+68 silly lockFile 907767ae-firebase-tools-1-1-4-package-tgz tar:///home/ubuntu/.npm/firebase-tools/1.1.4/package.tgz
+69 silly lockFile 56f9cb9a-npm-firebase-tools-1-1-4-package /home/ubuntu/.npm/firebase-tools/1.1.4/package
+70 verbose lock /home/ubuntu/.npm/firebase-tools/1.1.4/package /home/ubuntu/.npm/56f9cb9a-npm-firebase-tools-1-1-4-package.lock
+71 silly lockFile 56f9cb9a-npm-firebase-tools-1-1-4-package /home/ubuntu/.npm/firebase-tools/1.1.4/package
+72 silly lockFile 56f9cb9a-npm-firebase-tools-1-1-4-package /home/ubuntu/.npm/firebase-tools/1.1.4/package
+73 verbose tar unpack /home/ubuntu/.npm/firebase-tools/1.1.4/package.tgz
+74 silly lockFile eda15336-npm-firebase-tools-1-1-4-package tar:///home/ubuntu/.npm/firebase-tools/1.1.4/package
+75 verbose lock tar:///home/ubuntu/.npm/firebase-tools/1.1.4/package /home/ubuntu/.npm/eda15336-npm-firebase-tools-1-1-4-package.lock
+76 silly lockFile 907767ae-firebase-tools-1-1-4-package-tgz tar:///home/ubuntu/.npm/firebase-tools/1.1.4/package.tgz
+77 verbose lock tar:///home/ubuntu/.npm/firebase-tools/1.1.4/package.tgz /home/ubuntu/.npm/907767ae-firebase-tools-1-1-4-package-tgz.lock
+78 silly gunzTarPerm modes [ '755', '644' ]
+79 silly gunzTarPerm extractEntry package.json
+80 silly gunzTarPerm extractEntry .npmignore
+81 silly gunzTarPerm extractEntry README.md
+82 silly gunzTarPerm extractEntry CHANGELOG.md
+83 silly gunzTarPerm extractEntry bin/firebase
+84 silly gunzTarPerm extractEntry lib/api.js
+85 silly gunzTarPerm extractEntry lib/app.js
+86 silly gunzTarPerm extractEntry lib/auth.js
+87 silly gunzTarPerm extractEntry lib/firebase.js
+88 silly gunzTarPerm extractEntry lib/help.js
+89 silly gunzTarPerm extractEntry lib/upload.js
+90 silly gunzTarPerm extractEntry release.sh
+91 silly lockFile eda15336-npm-firebase-tools-1-1-4-package tar:///home/ubuntu/.npm/firebase-tools/1.1.4/package
+92 silly lockFile eda15336-npm-firebase-tools-1-1-4-package tar:///home/ubuntu/.npm/firebase-tools/1.1.4/package
+93 silly lockFile 907767ae-firebase-tools-1-1-4-package-tgz tar:///home/ubuntu/.npm/firebase-tools/1.1.4/package.tgz
+94 silly lockFile 907767ae-firebase-tools-1-1-4-package-tgz tar:///home/ubuntu/.npm/firebase-tools/1.1.4/package.tgz
+95 verbose chmod /home/ubuntu/.npm/firebase-tools/1.1.4/package.tgz 644
+96 verbose chown /home/ubuntu/.npm/firebase-tools/1.1.4/package.tgz [ 1000, 1000 ]
+97 silly lockFile f064f30d-e-tools-firebase-tools-1-1-4-tgz https://registry.npmjs.org/firebase-tools/-/firebase-tools-1.1.4.tgz
+98 silly lockFile f064f30d-e-tools-firebase-tools-1-1-4-tgz https://registry.npmjs.org/firebase-tools/-/firebase-tools-1.1.4.tgz
+99 silly lockFile d4dacdfa-firebase-tools-1-1-4 firebase-tools@1.1.4
+100 silly lockFile d4dacdfa-firebase-tools-1-1-4 firebase-tools@1.1.4
+101 silly lockFile 59c4bcc4-firebase-tools firebase-tools@
+102 silly lockFile 59c4bcc4-firebase-tools firebase-tools@
+103 silly resolved [ { name: 'firebase-tools',
+103 silly resolved     preferGlobal: true,
+103 silly resolved     version: '1.1.4',
+103 silly resolved     description: 'The Firebase Command Line Tools',
+103 silly resolved     keywords:
+103 silly resolved      [ 'firebase',
+103 silly resolved        'hosting',
+103 silly resolved        'ssl',
+103 silly resolved        'cdn',
+103 silly resolved        'cli',
+103 silly resolved        'synchronization',
+103 silly resolved        'real-time',
+103 silly resolved        'websockets',
+103 silly resolved        'cloud' ],
+103 silly resolved     author: { name: 'Firebase', email: 'support@firebase.com' },
+103 silly resolved     contributors: [ [Object], [Object], [Object] ],
+103 silly resolved     repository:
+103 silly resolved      { type: 'git',
+103 silly resolved        url: 'https://github.com/firebase/firebase-tools.git' },
+103 silly resolved     homepage: 'https://github.com/firebase/firebase-tools',
+103 silly resolved     dependencies:
+103 silly resolved      { optimist: '0.6.x',
+103 silly resolved        prompt: '0.2.x',
+103 silly resolved        tar: '0.1.x',
+103 silly resolved        open: '0.0.x',
+103 silly resolved        request: '2.34.x',
+103 silly resolved        'fstream-ignore': '0.0.x',
+103 silly resolved        temp: '0.6.x',
+103 silly resolved        firebase: '~1.0.11',
+103 silly resolved        progress: '~1.1.5',
+103 silly resolved        when: '3.1.0',
+103 silly resolved        chalk: '~0.4.0' },
+103 silly resolved     bin: { firebase: './bin/firebase' },
+103 silly resolved     engines: { node: '>=0.10.0' },
+103 silly resolved     engineStrict: true,
+103 silly resolved     readme: '# firebase-tools\n\n[![NPM version](https://badge.fury.io/js/firebase-tools.svg)](http://badge.fury.io/js/firebase-tools)\n\nThese are the Firebase Command Line (CLI) Tools. They can be used to:\n\n* Administer your Firebase account\n* Interact with [Firebase Hosting](https://www.firebase.com/hosting.html), our product to host your HTML, JS, CSS, images, etc.\n\nTo get started with the Firebase CLI, [read through our hosting quickstart guide](https://www.firebase.com/docs/hosting.html).\n\n## Installation\n\nTo install the Firebase CLI, you first need to [sign up for a Firebase account](https://www.firebase.com/signup/).\nThen you need to install [Node.js](http://nodejs.org/) and [npm](https://npmjs.org/).\nNote that installing Node.js should install npm as well.\n\nOnce npm is installed, get the Firebase CLI by running the following shell command:\n\n```shell\nnpm install -g firebase-tools\n```\n\nThis will provide you with the globally accessible `firebase` command.\n\n## Commands\n\nThe command `firebase --help` lists the available commands and\n`firebase <command> --help` shows more details for an individual command.\n\nHere is the output of running `firebase --help`:\n\n```shell\nUsage: firebase <command>\n\n  Available commands are:\n\n  bootstrap\n    Creates a new Firebase powered app from a prebuilt template to quickly\n    get a project up and running. This creates a new folder and prompts\n    you through all the required settings.\n\n  deploy\n    Deploys the current app to Firebase Hosting and creates your subdomain on\n    firebaseapp.com if it doesn\'t exist already.\n\n  init\n    Initializes an existing Firebase app in the current directory and prompts\n    you through configuring it for firebaseapp.com.\n\n  open\n    Opens the URL of the current Firebase app in a browser.\n\n  list\n    Lists the Firebases available to the currently logged in user.\n\n  delete-site\n    Deletes the current app from Firebase Hosting and displays a\n    \'Site not Found\' page as if the site had never been deployed to.\n\n  login\n    Logs the user into Firebase. All commands that require login will prompt\n    you if you\'re not currently logged in.\n\n  logout\n    Logs the user out of Firebase.\n\n  -h, --help\n    Shows this help screen. Use `firebase <command> --help` for more\n    detailed help instructions.\n\n  -v, --version\n    Displays the current version.\n\n  -s, --silent\n    Silent mode for scripting - commands will error with non-zero status code\n    instead of waiting for prompt if not enough information supplied.\n```\n\n## Credit\n\nInspired by [Luke Vivier](https://github.com/lvivier/)\'s Firebase command line tools.\n\n## License\n[MIT](http://firebase.mit-license.org)\n',
+103 silly resolved     readmeFilename: 'README.md',
+103 silly resolved     bugs: { url: 'https://github.com/firebase/firebase-tools/issues' },
+103 silly resolved     _id: 'firebase-tools@1.1.4',
+103 silly resolved     dist: { shasum: '8e5ceb3371d0863d677426c8a9b2d737e2f742b7' },
+103 silly resolved     _from: 'firebase-tools@',
+103 silly resolved     _resolved: 'https://registry.npmjs.org/firebase-tools/-/firebase-tools-1.1.4.tgz' } ]
+104 info install firebase-tools@1.1.4 into /usr/local/lib
+105 info installOne firebase-tools@1.1.4
+106 info /usr/local/lib/node_modules/firebase-tools unbuild
+107 verbose tar unpack /home/ubuntu/.npm/firebase-tools/1.1.4/package.tgz
+108 silly lockFile 7e3d5d18--lib-node-modules-firebase-tools tar:///usr/local/lib/node_modules/firebase-tools
+109 verbose lock tar:///usr/local/lib/node_modules/firebase-tools /home/ubuntu/.npm/7e3d5d18--lib-node-modules-firebase-tools.lock
+110 silly lockFile 907767ae-firebase-tools-1-1-4-package-tgz tar:///home/ubuntu/.npm/firebase-tools/1.1.4/package.tgz
+111 verbose lock tar:///home/ubuntu/.npm/firebase-tools/1.1.4/package.tgz /home/ubuntu/.npm/907767ae-firebase-tools-1-1-4-package-tgz.lock
+112 silly gunzTarPerm modes [ '755', '644' ]
+113 error Error: EACCES, mkdir '/usr/local/lib/node_modules/firebase-tools'
+113 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/firebase-tools']
+113 error   errno: 3,
+113 error   code: 'EACCES',
+113 error   path: '/usr/local/lib/node_modules/firebase-tools',
+113 error   fstream_type: 'Directory',
+113 error   fstream_path: '/usr/local/lib/node_modules/firebase-tools',
+113 error   fstream_class: 'DirWriter',
+113 error   fstream_stack:
+113 error    [ '/usr/lib/nodejs/fstream/lib/dir-writer.js:36:23',
+113 error      '/usr/lib/nodejs/mkdirp/index.js:37:53',
+113 error      'Object.oncomplete (fs.js:107:15)' ] }
+114 error Please try running this command again as root/Administrator.
+115 error System Linux 3.13.0-39-generic
+116 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "firebase-tools"
+117 error cwd /home/ubuntu/Documents/Projects/Notice
+118 error node -v v0.10.25
+119 error npm -v 1.3.10
+120 error path /usr/local/lib/node_modules/firebase-tools
+121 error fstream_path /usr/local/lib/node_modules/firebase-tools
+122 error fstream_type Directory
+123 error fstream_class DirWriter
+124 error code EACCES
+125 error errno 3
+126 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/firebase-tools'
+127 error fstream_stack /usr/lib/nodejs/fstream/lib/dir-writer.js:36:23
+127 error fstream_stack /usr/lib/nodejs/mkdirp/index.js:37:53
+127 error fstream_stack Object.oncomplete (fs.js:107:15)
+128 verbose exit [ 3, true ]
