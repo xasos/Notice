@@ -81,6 +81,18 @@ angular.module('devFlowApp')
         templateUrl: 'views/chat.html',
         controller: 'ChatCtrl'
       })
+      .when('/dashboard', {
+        templateUrl: 'views/dashboard.html',
+        controller: 'DashboardCtrl'
+      })
+      .when('/profile', {
+        templateUrl: 'views/profile.html',
+        controller: 'ProfileCtrl'
+      })
+      .when('/profile', {
+        templateUrl: 'views/profile.html',
+        controller: 'ProfileCtrl'
+      })
       .otherwise({redirectTo: '/'});
   }])
 

@@ -1,3 +1,11 @@
+.when('/dashboard', {
+  templateUrl: 'views/dashboard.html',
+  controller: 'DashboardCtrl'
+})
+.when('/profile', {
+  templateUrl: 'views/profile.html',
+  controller: 'ProfileCtrl'
+})
 'use strict';
 
 /**
