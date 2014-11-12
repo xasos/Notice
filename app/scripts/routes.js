@@ -67,40 +67,21 @@ angular.module('devFlowApp')
         controller: 'LoginCtrl'
       })
 
-      .when('/chat', {
-        templateUrl: 'views/chat.html',
-        controller: 'ChatCtrl'
-      })
-
-      .whenAuthenticated('/account', {
+      .when('/account', {
         templateUrl: 'views/account.html',
         controller: 'AccountCtrl'
       })
-
-      .when('/chat', {
-        templateUrl: 'views/chat.html',
-        controller: 'ChatCtrl'
-      })
-      .when('/dashboard', {
+      
+      .whenAuthenticated('/dashboard', {
         templateUrl: 'views/dashboard.html',
         controller: 'DashboardCtrl'
       })
+      
       .when('/profile/:name', {
         templateUrl: 'views/profile.html',
         controller: 'ProfileCtrl'
       })
-      .when('/profile', {
-        templateUrl: 'views/profile.html',
-        controller: 'ProfileCtrl'
-      })
-      .when('/dashboard', {
-      templateUrl: 'views/dashboard.html',
-      controller: 'DashboardCtrl'
-      })
-      .when('/profile', {
-      templateUrl: 'views/profile.html',
-      controller: 'ProfileCtrl'
-      })
+      
       .otherwise({redirectTo: '/'});
   }])
 
