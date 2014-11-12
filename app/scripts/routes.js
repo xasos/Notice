@@ -85,7 +85,7 @@ angular.module('devFlowApp')
         templateUrl: 'views/dashboard.html',
         controller: 'DashboardCtrl'
       })
-      .when('/profile', {
+      .when('/profile/:name', {
         templateUrl: 'views/profile.html',
         controller: 'ProfileCtrl'
       })
