@@ -660,6 +660,26 @@ angular.module('devFlowApp')
         templateUrl: 'views/chat.html',
         controller: 'ChatCtrl'
       })
+      .when('/dashboard', {
+        templateUrl: 'views/dashboard.html',
+        controller: 'DashboardCtrl'
+      })
+      .when('/profile/:name', {
+        templateUrl: 'views/profile.html',
+        controller: 'ProfileCtrl'
+      })
+      .when('/profile', {
+        templateUrl: 'views/profile.html',
+        controller: 'ProfileCtrl'
+      })
+      .when('/dashboard', {
+      templateUrl: 'views/dashboard.html',
+      controller: 'DashboardCtrl'
+      })
+      .when('/profile', {
+      templateUrl: 'views/profile.html',
+      controller: 'ProfileCtrl'
+      })
       .otherwise({redirectTo: '/'});
   }])
 
@@ -696,3 +716,39 @@ angular.module('devFlowApp')
 
   // used by route security
   .constant('SECURED_ROUTES', {});
+
+'use strict';
+
+/**
+ * @ngdoc function
+ * @name devFlowApp.controller:ProfileCtrl
+ * @description
+ * # ProfileCtrl
+ * Controller of the devFlowApp
+ */
+angular.module('devFlowApp')
+  .controller('ProfileCtrl', ["$scope", function ($scope) {
+    $scope.awesomeThings = [
+      'HTML5 Boilerplate',
+      'AngularJS',
+      'Karma'
+    ];
+  }]);
+
+'use strict';
+
+/**
+ * @ngdoc function
+ * @name devFlowApp.controller:DashboardCtrl
+ * @description
+ * # DashboardCtrl
+ * Controller of the devFlowApp
+ */
+angular.module('devFlowApp')
+  .controller('DashboardCtrl', ["$scope", function ($scope) {
+    $scope.awesomeThings = [
+      'HTML5 Boilerplate',
+      'AngularJS',
+      'Karma'
+    ];
+  }]);
