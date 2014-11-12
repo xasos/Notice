@@ -67,12 +67,12 @@ angular.module('devFlowApp')
         controller: 'LoginCtrl'
       })
 
-      .when('/account', {
+      .whenAuthenticated('/account', {
         templateUrl: 'views/account.html',
         controller: 'AccountCtrl'
       })
       
-      .whenAuthenticated('/dashboard', {
+      .when('/dashboard', {
         templateUrl: 'views/dashboard.html',
         controller: 'DashboardCtrl'
       })
