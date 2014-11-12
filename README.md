@@ -3,7 +3,7 @@ Notice
 
 ## What is Notice?
 
-Notice is a push notification system for school/club announcements built in AngularJS/Ionic. Features announcements by club/activity and push notifications.
+Notice is a push notification system for school/club announcements built with AngularJS. Features announcements by club/activity and push notifications.
 
 Built as part of the App Development Course (M257).
 
@@ -13,16 +13,19 @@ Built as part of the App Development Course (M257).
 ```sh
 $ git clone https://github.com/xasos/Notice
 $ cd Notice
-$ ionic serve
-
-# To build natively
-$ ionic add <platform>
-$ ionic build <platform>
-$ ionic emulate <platform>
+$ npm install
+$ bower install
+$ grunt serve
 ```
 
-This app is also available on the web [here](https://notice.herokuapp.com/).
+## Deploying to Firebase
+```sh
+$ npm install -g firebase-tools
+$ grunt build
+$ firebase deploy
+```
+
+This app is also available on the web [here](https://trynotice.firebaseapp.com/).
 
 ## License
 [MIT License](LICENSE)
-
