@@ -11,4 +11,18 @@
         <h3 class="text-muted"><a href="#/" style="text-decoration: none;">Notice</a></h3>
 </div>
 
-<p>This is the dashboard view.</p>
+<div ng-repeat="n in notifications| orderByPriority | reverse">
+    <div class="item item-avatar">
+      <img ng-src="{{n.gravatarURL}}"></img>
+      <h2 id="personName">{{n.createdBy}}</h2>
+      <p id="tagDate">{{n.dateCreated | date:'MMMM d, yyyy'}}</p>
+      <button class="button button-small" style="background-color: {{n.color}}; border-color: {{n.color}}; color: #fff;" id="tagName">
+        {{n.tag}}
+      </button>
+    </div>
+    <div class="item item-body">
+      <p class="notificationText">
+        {{n.message}}
+      </p>
+    </div>
+  </div>
