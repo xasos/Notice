@@ -9,6 +9,8 @@ angular.module('MyApp.controllers')
     console.log(Auth.currentUser);
     $scope.message = '';
     $scope.activityName = '';
+    $scope.isTeacher = $scope.email.indexof("students") > -1;
+    console.log($scope.isTeacher);
     
     $scope.clubs = [
     { id: 1, name: 'Math Team', color: '#43cee6' },
