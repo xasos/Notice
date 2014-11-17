@@ -9,6 +9,8 @@ angular.module('MyApp.controllers')
     console.log(Auth.currentUser);
     $scope.message = '';
     $scope.activityName = '';
+    $scope.isStudent = /([\._a-zA-Z0-9-]+@students.d211.org)|([\._a-zA-Z0-9-]+@d211.org)/.test($scope.email);
+    console.log($scope.isStudent);
     
     $scope.clubs = [
     { id: 1, name: 'Math Team', color: '#43cee6' },
