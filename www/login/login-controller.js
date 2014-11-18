@@ -8,9 +8,6 @@ angular.module('MyApp.controllers')
     };
     $scope.errorMessage = null;
     
-    // var userRef = new Firebase('https://noticeapp.firebaseio.com/user');
-    // $rootScope.users = $firebase(userRef);
-    
     $scope.login = function() {
       $scope.errorMessage = null;
 
