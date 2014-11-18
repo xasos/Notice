@@ -9,6 +9,11 @@ angular.module('MyApp.controllers')
     $scope.message = '';
     $scope.activityName = '';
     $scope.isStudent = /([\._a-zA-Z0-9-]+@students.d211.org)/.test($scope.email);
+    $scope.subscriptions = [
+    { id: 1, name: 'Math Team', color: '#43cee6', isChecked: false },
+    { id: 2, name: 'Basketball', color: '#4a87ee', isChecked: false },
+    { id: 3, name: 'Horticulture Club', color: '#ef4e3a', isChecked: false },
+    { id: 4, name: 'Science Olympiad', color: '#8a6de9', isChecked: false }];
     
     $scope.clubs = [
     { id: 1, name: 'Math Team', color: '#43cee6' },
