@@ -28,6 +28,12 @@ angular.module('MyApp.controllers')
     $scope.getGravatar = function(md5) {
         return 'http://www.gravatar.com/avatar/' + notifications.md5;
     };
+    
+    $ionicModal.fromTemplateUrl('templates/modal.html', {
+        scope: $scope
+    }).then(function(modal) {
+        $scope.modal = modal;
+    });
 })
 .filter('reverse', function() {
       function toArray(list) {
