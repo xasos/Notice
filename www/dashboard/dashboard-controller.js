@@ -34,6 +34,14 @@ angular.module('MyApp.controllers')
         return 'http://www.gravatar.com/avatar/' + notifications.md5;
     };
     
+    $scope.updateSubscriptions = function() {
+        $scope.subscriptions.forEach(function(entry) {
+            if(entry.isChecked) {
+                $rootScope.user.subscribed+=entry.id;
+            }
+        });    
+    }
+    
     $ionicModal.fromTemplateUrl('templates/modal.html', {
         scope: $scope
     }).then(function(modal) {
