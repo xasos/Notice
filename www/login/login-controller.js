@@ -1,13 +1,16 @@
 'use strict';
 //([\._a-zA-Z0-9-]+@d211.org)
 angular.module('MyApp.controllers')
-.controller('LoginCtrl', function($scope, $state, $ionicLoading, Auth, User) {
-    $scope.user = {
+.controller('LoginCtrl', function($scope, $state, $ionicLoading, Auth, User, $rootScope) {
+    $rootScope.user = {
       email: '',
       password: ''
     };
     $scope.errorMessage = null;
-
+    
+    // var userRef = new Firebase('https://noticeapp.firebaseio.com/user');
+    // $rootScope.users = $firebase(userRef);
+    
     $scope.login = function() {
       $scope.errorMessage = null;
 
@@ -15,7 +18,7 @@ angular.module('MyApp.controllers')
         template: 'Please wait...'
       });
  
-      Auth.login($scope.user.email, $scope.user.password)
+      Auth.login($rootScope.user.email, $rootScope.user.password)
           .then(User.loadCurrentUser)
           .then(redirectBasedOnStatus)
           .catch(handleError);
