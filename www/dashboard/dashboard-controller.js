@@ -5,12 +5,13 @@ angular.module('MyApp.controllers')
 .controller('DashboardCtrl', function($firebase, $scope, Auth, md5, $ionicModal, $rootScope) {
     var noticeRef = new Firebase('https://noticeapp.firebaseio.com/notifications');
     $scope.notifications = $firebase(noticeRef);  	
+    
     $scope.email = Auth.currentUser.email;
     $scope.message = '';
     $scope.activityName = '';
     $scope.isStudent = /([\._a-zA-Z0-9-]+@students.d211.org)/.test($scope.email);
     
-    $rootScope.user.subscriptions = [
+    $scope.subscriptions = [
     { id: 1, name: 'Math Team', color: '#43cee6', isChecked: false },
     { id: 2, name: 'Basketball', color: '#4a87ee', isChecked: false },
     { id: 3, name: 'Horticulture Club', color: '#ef4e3a', isChecked: false },
