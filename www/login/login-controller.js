@@ -4,7 +4,8 @@ angular.module('MyApp.controllers')
 .controller('LoginCtrl', function($scope, $state, $ionicLoading, Auth, User, $rootScope) {
     $rootScope.user = {
       email: '',
-      password: ''
+      password: '',
+      subscribed: ''
     };
     $scope.errorMessage = null;
     
