@@ -2,7 +2,7 @@
 
 angular.module('MyApp.controllers')
 .value('BASE_URL', 'https://noticeapp.firebaseio.com/')
-.controller('DashboardCtrl', function($firebase, $scope, Auth, md5, $ionicModal) {
+.controller('DashboardCtrl', function($firebase, $scope, Auth, md5, $ionicModal, $rootScope) {
     var noticeRef = new Firebase('https://noticeapp.firebaseio.com/notifications');
     $scope.notifications = $firebase(noticeRef);  	
     $scope.email = Auth.currentUser.email;
@@ -22,10 +22,11 @@ angular.module('MyApp.controllers')
     { id: 4, name: 'Science Olympiad', color: '#8a6de9'}];
 
     $scope.gravatarURL = 'http://www.gravatar.com/avatar/' + md5.createHash($scope.email); 
-
+    
     $scope.postNotification = function(message, tag, color) {
         $scope.notifications.$add({message: message, createdBy: $scope.email, gravatarURL: $scope.gravatarURL, dateCreated: Date.now(), tag: tag, color: color});
   	    $scope.message = null;
+  	    console.log($rootScope.user);
     };
 
     $scope.getGravatar = function(md5) {
