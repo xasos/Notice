@@ -18,7 +18,7 @@ angular.module('MyApp.services').service('User',
 
     this.create = function(id, email) {
       var users = $firebase(usersRef);
-      return users.$child(id).$set({ email: email });
+      return users.$child(id).$push({ email: email });
     };
     
     // this.addName = function(firstName, lastName) {
