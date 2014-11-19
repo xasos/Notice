@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('MyApp.services').service('User',
-  function($q, $firebase, FIREBASE_ROOT, Auth) {
+  function($q, $firebase, FIREBASE_ROOT, Auth, $rootScope) {
     var usersRef = new Firebase(FIREBASE_ROOT + '/users');
     var currentUser = null;
     var subscribed = "1234";
@@ -39,6 +39,15 @@ angular.module('MyApp.services').service('User',
     this.manageSubscriptions = function(subs) {
       subscribed = subs;
       var users = $firebase(usersRef);
+      
+      for (var key in users) {
+            var obj = users[key];
+            if (key.toLowerCase() === uid.toLowerCase()) {
+                $rootScope.currentUser = obj;
+                console.log($currentUser);
+            }
+      }
+      
       return users.$child(id).$set({ subscribed: subs });
     };
   });
