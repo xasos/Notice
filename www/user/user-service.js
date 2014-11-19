@@ -38,6 +38,7 @@ angular.module('MyApp.services').service('User',
     
     this.manageSubscriptions = function(subs) {
       subscribed = subs;
+      var users = $firebase(usersRef);
       return users.$child(id).$set({ subscribed: subs });
     };
   });
