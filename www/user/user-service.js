@@ -39,12 +39,12 @@ angular.module('MyApp.services').service('User',
     this.manageSubscriptions = function(subs) {
       subscribed = subs;
       var users = $firebase(usersRef);
+      console.log(Auth.currentUser);
       
       for (var key in users) {
             var obj = users[key];
             if (key.toLowerCase() === uid.toLowerCase()) {
-                $rootScope.currentUser = obj;
-                console.log($currentUser);
+                
             }
       }
       
