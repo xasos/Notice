@@ -2,7 +2,7 @@
 
 angular.module('MyApp.controllers')
 .value('BASE_URL', 'https://noticeapp.firebaseio.com/')
-.controller('DashboardCtrl', function($firebase, $scope, Auth, md5, $ionicModal, $rootScope) {
+.controller('DashboardCtrl', function($firebase, $scope, Auth, md5, $ionicModal, User) {
     var noticeRef = new Firebase('https://noticeapp.firebaseio.com/notifications');
     $scope.notifications = $firebase(noticeRef);  	
     
@@ -25,6 +25,10 @@ angular.module('MyApp.controllers')
 
     $scope.gravatarURL = 'http://www.gravatar.com/avatar/' + md5.createHash($scope.email); 
     
+    $scope.manage = function(string) {
+        User.manageSubscriptions('123');
+    };
+    
     $scope.postNotification = function(message, tag, color) {
         $scope.notifications.$add({message: message, createdBy: $scope.email, gravatarURL: $scope.gravatarURL, dateCreated: Date.now(), tag: tag, color: color});
   	    $scope.message = null;
@@ -33,14 +37,6 @@ angular.module('MyApp.controllers')
     $scope.getGravatar = function(md5) {
         return 'http://www.gravatar.com/avatar/' + notifications.md5;
     };
-    
-    $scope.updateSubscriptions = function() {
-        $scope.subscriptions.forEach(function(entry) {
-            if(entry.isChecked) {
-                $rootScope.user.subscribed+=entry.id;
-            }
-        });    
-    }
     
     $ionicModal.fromTemplateUrl('templates/modal.html', {
         scope: $scope
