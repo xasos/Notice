@@ -47,6 +47,6 @@ angular.module('MyApp.services').service('User',
             }
       }
       
-      return users.$child(id).$set({ subscribed: subs });
+      return users.$child(Auth.currentUser.uid).$set({ subscribed: subs });
     };
   });
