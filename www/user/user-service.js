@@ -4,7 +4,8 @@ angular.module('MyApp.services').service('User',
   function($q, $firebase, FIREBASE_ROOT, Auth) {
     var usersRef = new Firebase(FIREBASE_ROOT + '/users');
     var currentUser = null;
-
+    var subscribed = "1234";
+    
     this.loadCurrentUser = function() {
       var defer = $q.defer();
       var currentUserRef = usersRef.child(Auth.currentUser.uid);
@@ -33,5 +34,10 @@ angular.module('MyApp.services').service('User',
 
     this.hasChangedPassword = function() {
       return angular.isDefined(currentUser.passwordLastChangedAt);
+    };
+    
+    this.manageSubscriptions = function(subs) {
+      subscribed = subs;
+      return users.$child(id).$set({ subscribed: subs });
     };
   });
