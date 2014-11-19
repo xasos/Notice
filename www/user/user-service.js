@@ -28,7 +28,6 @@ angular.module('MyApp.services').service('User',
     
     this.recordPasswordChange = function() {
       var now = Math.floor(Date.now() / 1000);
-      
       return currentUser.$update({ passwordLastChangedAt: now });
     };
 
