@@ -2,7 +2,7 @@
 
 angular.module('MyApp.controllers')
 .value('BASE_URL', 'https://noticeapp.firebaseio.com/')
-.controller('DashboardCtrl', function($firebase, $scope, Auth, md5, $ionicModal, User) {
+.controller('DashboardCtrl', function($firebase, $scope, Auth, md5, $ionicModal, User, $rootScope) {
     var noticeRef = new Firebase('https://trynotice.firebaseio.com/notifications');
     $scope.notifications = $firebase(noticeRef);  	
     
