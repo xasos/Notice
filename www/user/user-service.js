@@ -44,7 +44,7 @@ angular.module('MyApp.services').service('User',
       console.log(uid);
       console.log(users);
       console.log(users.uid.subscriptions);
-      return users.uid.subscriptions;
+      return users.uid.subscriptions.$asObject();
     };
     
     this.addName = function(firstName, lastName) {		
