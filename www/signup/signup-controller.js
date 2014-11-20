@@ -8,6 +8,8 @@ angular.module('MyApp.controllers')
       email: ''
     };
     $scope.errorMessage = null;
+    $scope.firstName = '';
+    $scope.lastName = '';
 
     $scope.signup = function() {
       $scope.errorMessage = null;
@@ -25,6 +27,7 @@ angular.module('MyApp.controllers')
 
     function createAuthUser() {
       return Auth.createUser($scope.user.email, password);
+      User.addName($scope.firstName, $scope.lastName);
     }
 
     function sendPasswordResetEmail(authUser) {
