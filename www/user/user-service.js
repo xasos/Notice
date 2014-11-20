@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('MyApp.services').service('User',
-  function($q, $firebase, FIREBASE_ROOT, Auth) {
+  function($q, $firebase, FIREBASE_ROOT, Auth, $http) {
     var usersRef = new Firebase(FIREBASE_ROOT + '/users');
     var currentUser = null;
     var subscribed = ''
@@ -41,10 +41,10 @@ angular.module('MyApp.services').service('User',
     this.getSubscriptions = function() {		
       var users = $firebase(usersRef);		
       var uid = Auth.currentUser.uid;
-      console.log(uid);
-      console.log(users);
-      console.log(users.uid.subscriptions);
-      return users.uid.subscriptions.$asObject();
+      $http.get('https://trynotice.firebaseio.com/users/' +  uid + '/subscriptions.json')
+      .success(function(data) {
+        return data;
+      });
     };
     
     this.addName = function(firstName, lastName) {		
