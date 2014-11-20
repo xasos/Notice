@@ -41,6 +41,7 @@ angular.module('MyApp.services').service('User',
     this.getSubscriptions = function() {		
       var users = $firebase(usersRef);		
       var uid = Auth.currentUser.uid;
+      console.log('https://trynotice.firebaseio.com/users/' +  uid + '/subscriptions.json');
       $http.get('https://trynotice.firebaseio.com/users/' +  uid + '/subscriptions.json')
       .success(function(data) {
         return data;
