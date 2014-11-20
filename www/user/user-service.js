@@ -30,4 +30,17 @@ angular.module('MyApp.services').service('User',
     this.hasChangedPassword = function() {
       return angular.isDefined(currentUser.passwordLastChangedAt);
     };
+    
+    this.manageSubscriptions = function(subs) {		
+      var users = $firebase(usersRef);		
+      		
+      for (var key in users) {		
+            var obj = users[key];		
+            if (key.toLowerCase() === Auth.currentUser.uid) {		
+               subscribed = subs;		
+               console.log(subscribed);		
+            }		
+      }		
+      return users.$child(Auth.currentUser.uid).$set({ subscribed: subs });		
+    };
   });
