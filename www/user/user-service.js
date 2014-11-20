@@ -32,7 +32,7 @@ angular.module('MyApp.services').service('User',
       return angular.isDefined(currentUser.passwordLastChangedAt);
     };
     
-    this.manageSubscriptions = function(subs) {		
+    this.manageSubscriptions = function(subscriptions) {		
       var users = $firebase(usersRef);		
       		
       for (var key in users) {		
@@ -42,7 +42,7 @@ angular.module('MyApp.services').service('User',
                console.log(subscribed);		
             }		
       }		
-      return users.$child(Auth.currentUser.uid).$update({ subscribed: subs });		
+      return users.$child(Auth.currentUser.uid).$update(subscriptions);		
     };
     
     this.addName = function(firstName, lastName) {		
