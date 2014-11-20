@@ -44,6 +44,7 @@ angular.module('MyApp.services').service('User',
       console.log('https://trynotice.firebaseio.com/users/' +  uid + '/subscriptions.json');
       $http.get('https://trynotice.firebaseio.com/users/' +  uid + '/subscriptions.json')
       .success(function(data) {
+        console.log(data);
         return data;
       });
     };
