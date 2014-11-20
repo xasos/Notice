@@ -56,12 +56,9 @@
         </ion-header-bar>
         <ion-content class="padding">
           <div class="list" ng-repeat="sub in subscriptions">
-            <ion-checkbox ng-model="sub.isChecked">Basketball</ion-checkbox>
-            <ion-checkbox ng-model="sub.isChecked">Science Olympiad</ion-checkbox>
-            <ion-checkbox ng-model="sub.isChecked">Horticulture Club</ion-checkbox>
-            <ion-checkbox ng-model="sub.isChecked">Math Team</ion-checkbox>
-            <button class="button button-full button-positive" ng-click="manage()">Done</button>
+            <ion-checkbox ng-model="sub.isChecked">{{sub.name}}</ion-checkbox>
           </div>
+          <button class="button button-full button-positive" ng-click="manage()">Done</button>
         </ion-content>
       </ion-modal-view>
     </script>
