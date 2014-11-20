@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('MyApp.services').service('User',
-  function($q, $firebase, FIREBASE_ROOT, Auth, $http) {
+  function($q, $firebase, FIREBASE_ROOT, Auth, $http, $rootScope) {
     var usersRef = new Firebase(FIREBASE_ROOT + '/users');
     var currentUser = null;
     var subscribed = '';
