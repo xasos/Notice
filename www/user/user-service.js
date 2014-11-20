@@ -40,7 +40,8 @@ angular.module('MyApp.services').service('User',
     
     this.getSubscriptions = function() {		
       var users = $firebase(usersRef);		
-      return users.(Auth.currentUser.uid).subscriptions;
+      var uid = Auth.currentUser.uid;
+      return users.uid.subscriptions;
     };
     
     this.addName = function(firstName, lastName) {		
