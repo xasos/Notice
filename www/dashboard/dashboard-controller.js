@@ -2,7 +2,7 @@
 
 angular.module('MyApp.controllers')
 .value('BASE_URL', 'https://noticeapp.firebaseio.com/')
-.controller('DashboardCtrl', function($firebase, $scope, Auth, md5, $ionicModal, User, $rootScope) {
+.controller('DashboardCtrl', function($firebase, $scope, Auth, md5, $ionicModal, User, $rootScope, $http) {
     var noticeRef = new Firebase('https://trynotice.firebaseio.com/notifications');
     $scope.notifications = $firebase(noticeRef);  	
     
@@ -12,6 +12,11 @@ angular.module('MyApp.controllers')
     $scope.isStudent = /([\._a-zA-Z0-9-]+@students.d211.org)/.test($rootScope.email);
     
     console.log(User.getSubscriptions());
+    $http.get(User.getSubscriptions())
+    .success(function(data) {
+        $scope.subscriptions = data;
+        console.log(data);
+    });
     
     // else {
     //     $scope.subscriptions = [{ id: 1, name: 'Math Team', color: '#43cee6', isChecked: false },
