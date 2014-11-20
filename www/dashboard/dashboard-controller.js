@@ -12,8 +12,8 @@ angular.module('MyApp.controllers')
     $scope.isStudent = /([\._a-zA-Z0-9-]+@students.d211.org)/.test($rootScope.email);
     $scope.subscriptions = '';
     
-    if(User.getSubscriptions) {
-        $scope.subscriptions = User.getSubscriptions;
+    if(User.getSubscriptions()) {
+        $scope.subscriptions = User.getSubscriptions();
         console.log('yo1');
         console.log($scope.subscriptions);
     }
