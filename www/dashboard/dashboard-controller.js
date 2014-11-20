@@ -26,7 +26,7 @@ angular.module('MyApp.controllers')
     $scope.gravatarURL = 'http://www.gravatar.com/avatar/' + md5.createHash($rootScope.email); 
     
     $scope.manage = function() {
-        User.manageSubscriptions('123');
+        User.manageSubscriptions(subscriptions);
     };
     
     $scope.postNotification = function(message, tag, color) {
