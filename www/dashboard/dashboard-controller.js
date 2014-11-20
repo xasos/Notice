@@ -10,10 +10,12 @@ angular.module('MyApp.controllers')
     $scope.message = '';
     $scope.activityName = '';
     $scope.isStudent = /([\._a-zA-Z0-9-]+@students.d211.org)/.test($rootScope.email);
+    $scope.subscriptions = '';
     
     if(User.getSubscriptions) {
         $scope.subscriptions = User.getSubscriptions;
         console.log('yo1');
+        console.log($scope.subscriptions);
     }
     else {
         $scope.subscriptions = [{ id: 1, name: 'Math Team', color: '#43cee6', isChecked: false },
