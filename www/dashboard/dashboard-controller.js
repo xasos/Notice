@@ -12,8 +12,8 @@ angular.module('MyApp.controllers')
     $scope.isStudent = /([\._a-zA-Z0-9-]+@students.d211.org)/.test($rootScope.email);
     $scope.subscriptions = '';
     
-    
-        $scope.subscriptions = User.getSubscriptions();
+    $scope.subscriptions = User.getSubscriptions();
+    console.log(User.getSubscriptions());
     
     // else {
     //     $scope.subscriptions = [{ id: 1, name: 'Math Team', color: '#43cee6', isChecked: false },
