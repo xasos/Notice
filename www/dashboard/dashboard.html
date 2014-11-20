@@ -58,7 +58,7 @@
           <div class="list" ng-repeat="sub in subscriptions">
             <ion-checkbox ng-model="sub.isChecked">{{sub.name}}</ion-checkbox>
           </div>
-          <button class="button button-full button-positive" ng-click="manage() && modal.hide()">Done</button>
+          <button class="button button-full button-positive" ng-click="manage(); modal.hide();">Done</button>
         </ion-content>
       </ion-modal-view>
     </script>
