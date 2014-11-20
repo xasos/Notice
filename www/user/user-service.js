@@ -38,6 +38,11 @@ angular.module('MyApp.services').service('User',
       return users.$child(Auth.currentUser.uid).$update({subscriptions: subscriptions});		
     };
     
+    this.getSubscriptions = function() {		
+      var users = $firebase(usersRef);		
+      return users.(Auth.currentUser.uid).subscriptions;
+    };
+    
     this.addName = function(firstName, lastName) {		
       var users = $firebase(usersRef);		
       		
