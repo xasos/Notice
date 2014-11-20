@@ -1,10 +1,9 @@
 'use strict';
 
 angular.module('MyApp.services').service('User',
-  function($q, $firebase, FIREBASE_ROOT, Auth, $http, $rootScope) {
+  function($q, $firebase, FIREBASE_ROOT, Auth, $http) {
     var usersRef = new Firebase(FIREBASE_ROOT + '/users');
     var currentUser = null;
-    var subscribed = '';
 
     this.loadCurrentUser = function() {
       var defer = $q.defer();
@@ -43,7 +42,7 @@ angular.module('MyApp.services').service('User',
       var uid = Auth.currentUser.uid;
       $http.get('https://trynotice.firebaseio.com/users/' +  uid + '/subscriptions.json')
       .success(function(data) {
-        $rootScope.subs = data;
+        return data;
       });
     };
     
