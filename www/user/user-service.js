@@ -4,6 +4,7 @@ angular.module('MyApp.services').service('User',
   function($q, $firebase, FIREBASE_ROOT, Auth) {
     var usersRef = new Firebase(FIREBASE_ROOT + '/users');
     var currentUser = null;
+    var subscribed = ''
 
     this.loadCurrentUser = function() {
       var defer = $q.defer();
