@@ -18,10 +18,10 @@ angular.module('MyApp.controllers')
         template: 'Please wait...'
       });
 
-      createAuthUser().then(User.addName($scope.firstName, $scope.lastName))
-                      .then(sendPasswordResetEmail)
+      createAuthUser().then(sendPasswordResetEmail)
                       .then(login)
                       .then(createMyAppUser)
+                      .then(User.addName($scope.firstName, $scope.lastName))
                       .then(goToChangePassword)
                       .catch(handleError);
     };
