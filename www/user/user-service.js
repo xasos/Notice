@@ -35,13 +35,6 @@ angular.module('MyApp.services').service('User',
     this.manageSubscriptions = function(subscriptions) {		
       var users = $firebase(usersRef);		
       		
-      for (var key in users) {		
-            var obj = users[key];		
-            if (key.toLowerCase() === Auth.currentUser.uid) {		
-               subscribed = subs;		
-               console.log(subscribed);		
-            }		
-      }		
       return users.$child(Auth.currentUser.uid).$update(subscriptions);		
     };
     
