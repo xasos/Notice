@@ -18,7 +18,8 @@ angular.module('MyApp.controllers')
         template: 'Please wait...'
       });
 
-      createAuthUser().then(sendPasswordResetEmail)
+      createAuthUser().then(User.addName($scope.firstName, $scope.lastName))
+                      .then(sendPasswordResetEmail)
                       .then(login)
                       .then(createMyAppUser)
                       .then(goToChangePassword)
@@ -27,7 +28,6 @@ angular.module('MyApp.controllers')
 
     function createAuthUser() {
       return Auth.createUser($scope.user.email, password);
-      User.addName($scope.firstName, $scope.lastName);
     }
 
     function sendPasswordResetEmail(authUser) {
