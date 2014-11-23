@@ -2,14 +2,14 @@
 
 angular.module('MyApp.controllers')
 .value('BASE_URL', 'https://noticeapp.firebaseio.com/')
-.controller('DashboardCtrl', function($firebase, $scope, Auth, md5, $ionicModal, User, $rootScope, $http) {
+.controller('DashboardCtrl', function($firebase, $scope, Auth, md5, $ionicModal, User, $http) {
     var noticeRef = new Firebase('https://trynotice.firebaseio.com/notifications');
     $scope.notifications = $firebase(noticeRef);  	
     
-    $rootScope.email = Auth.currentUser.email;
+    $scope.email = Auth.currentUser.email;
     $scope.message = '';
     $scope.activityName = '';
-    $scope.isStudent = /([\._a-zA-Z0-9-]+@students.d211.org)/.test($rootScope.email);
+    $scope.isStudent = /([\._a-zA-Z0-9-]+@students.d211.org)/.test($scope.email);
     
     console.log(User.getSubscriptions());
     $http.get(User.getSubscriptions())
@@ -33,14 +33,14 @@ angular.module('MyApp.controllers')
     { id: 3, name: 'Horticulture Club', color: '#ef4e3a' },
     { id: 4, name: 'Science Olympiad', color: '#8a6de9'}];
 
-    $scope.gravatarURL = 'http://www.gravatar.com/avatar/' + md5.createHash($rootScope.email); 
+    $scope.gravatarURL = 'http://www.gravatar.com/avatar/' + md5.createHash($scope.email); 
     
     $scope.manage = function() {
         User.manageSubscriptions($scope.subscriptions);
     };
     
     $scope.postNotification = function(message, tag, color) {
-        $scope.notifications.$add({message: message, createdBy: $rootScope.email, gravatarURL: $scope.gravatarURL, dateCreated: Date.now(), tag: tag, color: color});
+        $scope.notifications.$add({message: message, createdBy: $scope.email, gravatarURL: $scope.gravatarURL, dateCreated: Date.now(), tag: tag, color: color});
   	    $scope.message = null;
     };
 
