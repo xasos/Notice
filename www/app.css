@@ -212,6 +212,11 @@ figure:nth-child(4),.css-slideshow figure:nth-child(5),.css-slideshow figure:nth
 	-o-animation: xfade 48s 0s infinite;
 	animation: xfade 48s 0s infinite;
 }
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
 @keyframes "xfade" {
  0% {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
