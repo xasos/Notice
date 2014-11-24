@@ -332,3 +332,6 @@ figure:nth-child(4),.css-slideshow figure:nth-child(5),.css-slideshow figure:nth
    opacity: 1;
  }
 }
+.css-slideshow img {
+	width: 115%;
+}
