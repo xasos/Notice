@@ -11,9 +11,11 @@
   <div class="card" ng-hide="isStudent">
       <div class="item item-text-wrap" novalidate>
         <h1 class="notif">Send a Notification</h1>
-        <input class="item item-input loginDetail notifSend" ng-model="message" ng-minlength="1" /><br>
+        
         
         <div class="activityPicker">
+          <form ng-submit="postNotification(message, selectedItem.name, selectedItem.color)">
+          <input class="item item-input loginDetail notifSend" ng-model="message" ng-minlength="1" /><br>
             <select id="s1" ng-model="selectedItem" ng-options="item as item.name for item in subscriptions" class="ng-pristine ng-valid" required>
               <option value="?" selected="selected">Select a Club</option>
               <option value="0"></option>
@@ -21,7 +23,8 @@
               <option value="2"></option>
               <option value="3"></option>
             </select>
-            <button  class="button button-outline button-outline submitNotif" id="postNotifButton" ng-click= "postNotification(message, selectedItem.name, selectedItem.color)">Submit</button>
+            <button class="button button-outline button-outline submitNotif" id="postNotifButton">Submit</button>
+          </form>        
         </div>
       </div>
   </div>
