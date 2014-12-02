@@ -46,6 +46,15 @@ angular.module('MyApp.controllers')
     }).then(function(modal) {
         $scope.modal = modal;
     });
+    
+    $scope.filterSubscriptions(tagName, index) {
+        if($scope.subscriptions[index].tagName) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
 })
 .filter('reverse', function() {
       function toArray(list) {
