@@ -47,7 +47,7 @@ angular.module('MyApp.controllers')
         $scope.modal = modal;
     });
     
-    $scope.filterSubscriptions(tagName, index) {
+    $scope.filterSubscriptions = function(tagName, index) {
         if($scope.subscriptions[index].tagName) {
             return true;
         }
