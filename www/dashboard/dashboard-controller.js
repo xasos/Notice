@@ -21,16 +21,10 @@ angular.module('MyApp.controllers')
         }
 
         else {
-        $scope.subscriptions = data;
-        console.log(data);
+            $scope.subscriptions = data;
+            console.log(data);
         }
     });
-    
-    $scope.clubs = [
-    { id: 1, name: 'Math Team', color: '#43cee6' },
-    { id: 2, name: 'Basketball', color: '#4a87ee' },
-    { id: 3, name: 'Horticulture Club', color: '#ef4e3a' },
-    { id: 4, name: 'Science Olympiad', color: '#8a6de9'}];
 
     $scope.gravatarURL = 'http://www.gravatar.com/avatar/' + md5.createHash($scope.email); 
     
