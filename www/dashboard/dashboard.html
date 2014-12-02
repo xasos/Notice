@@ -15,7 +15,7 @@
         
         <div class="activityPicker">
           <form ng-submit="postNotification(message, selectedItem.name, selectedItem.color)">
-          <input class="item item-input loginDetail notifSend" ng-model="message" ng-minlength="1" /><br>
+          <input class="item item-input loginDetail notifSend" ng-model="message" required /><br>
             <select id="s1" ng-model="selectedItem" ng-options="item as item.name for item in subscriptions" class="ng-pristine ng-valid" required>
               <option value="?" selected="selected">Select a Club</option>
               <option value="0"></option>
