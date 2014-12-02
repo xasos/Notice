@@ -8,7 +8,7 @@ angular.module('MyApp', [
   'MyApp.directives',
   'MyApp.controllers'
 ])
-.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+.config(function($stateProvider, $urlRouterProvider) {
   var resolve = {
     auth: function($q, $timeout, Auth, User) {
       var defer = $q.defer();
@@ -76,7 +76,6 @@ angular.module('MyApp', [
     });
 
   $urlRouterProvider.otherwise('/app/dashboard');
-  $locationProvider.html5Mode(true);
 })
 .run(function($rootScope, $state, $ionicPlatform) {
   $ionicPlatform.ready(function() {
