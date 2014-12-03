@@ -13,7 +13,7 @@ angular.module('MyApp.controllers')
     $scope.dataLoaded = false;
     dataload();
     
-    function dataLoad() {
+    $scope.dataLoad = function() {
         $http.get(User.getSubscriptions())
         .success(function(data) {
             if(data == null) {
