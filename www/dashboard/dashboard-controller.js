@@ -47,8 +47,9 @@ angular.module('MyApp.controllers')
     });
     
     $scope.filterSubscriptions = function(tagName, index) {
+        console.log(index);
+        console.log(tagName);
         if($scope.subscriptions[index].tagName) {
-            console.log(index);
             return true;
         }
         else {
