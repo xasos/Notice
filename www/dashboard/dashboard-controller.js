@@ -11,7 +11,7 @@ angular.module('MyApp.controllers')
     $scope.activityName = '';
     $scope.isStudent = /([\._a-zA-Z0-9-]+@students.d211.org)/.test($scope.email);
     $scope.dataLoaded = false;
-    dataload();
+    dataLoad();
     
     $scope.dataLoad = function() {
         $http.get(User.getSubscriptions())
