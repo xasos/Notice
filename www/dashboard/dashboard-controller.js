@@ -48,6 +48,7 @@ angular.module('MyApp.controllers')
     
     $scope.filterSubscriptions = function(index) {
         console.log(User.getSubscriptions())
+        console.log(index)
         if(User.getSubscriptions()[0].name == $scope.notifications[index].tag) {
             return true;
         }
