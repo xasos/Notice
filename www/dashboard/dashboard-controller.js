@@ -22,7 +22,6 @@ angular.module('MyApp.controllers')
 
         else {
             $scope.subscriptions = data;
-            console.log(data);
         }
     });
 
