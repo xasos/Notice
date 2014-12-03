@@ -64,7 +64,7 @@ angular.module('MyApp.controllers')
             }
         }
         else {
-            dataLoad();
+            $scope.dataLoad();
         }
     };
 })
