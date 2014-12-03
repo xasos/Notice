@@ -46,10 +46,11 @@ angular.module('MyApp.controllers')
         $scope.modal = modal;
     });
     
-    $scope.filterSubscriptions = function(tagName, index) {
+    $scope.filterSubscriptions = function(index) {
         console.log(index);
-        console.log(tagName);
-        if($scope.subscriptions[index].tagName) {
+        console.log($scope.subscriptions[0].tagName)
+        console.log($scope.notifications[0].tag)
+        if($scope.subscriptions[index].tagName == $scope.notifications[index].tag) {
             return true;
         }
         else {
