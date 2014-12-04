@@ -4,16 +4,16 @@
   <h2 class="subtitleText">The easy way to stay up-to-date with school activites</h2>
   <div class="loginBackground">
     
-<form method="POST" action="javascript:void(0)" autocomplete = "on">
+
 <div class="loginList">
       <label class="item item-input item-stacked-label">
         <input type="email" class="loginDetail ng-pristine ng-valid ng-valid-email" placeholder="Email" ng-model="user.email" autocomplete="on">
       </label> 
       <label class="item item-input item-stacked-label">
-        <input type="password" class="loginDetail ng-pristine ng-valid" placeholder="Password" ng-model="user.password" autocomplete="off">
+        <input type="password" class="loginDetail ng-pristine ng-valid" placeholder="Password" ng-model="user.password" >
       </label>
     </div>
-</form>
+
     <div class="padding">
       <button class="button button-dark button-outline loginButton" ng-click="login()">Log in</button>
       <div class="error" ng-if="errorMessage" ng-bind="errorMessage"></div>
