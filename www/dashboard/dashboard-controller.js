@@ -32,8 +32,11 @@ angular.module('MyApp.controllers')
     };
     
     $scope.postNotification = function(message, tag, color) {
-        $scope.notifications.$add({message: message, createdBy: $scope.email, gravatarURL: $scope.gravatarURL, dateCreated: Date.now(), tag: tag, color: color});
+        if (tag != null)
+        {
+             $scope.notifications.$add({message: message, createdBy: $scope.email, gravatarURL: $scope.gravatarURL, dateCreated: Date.now(), tag: tag, color: color});
   	    $scope.message = null;
+        }
     };
 
     $scope.getGravatar = function(md5) {
