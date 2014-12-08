@@ -28,6 +28,21 @@
         </div>
       </div>
   </div>
+  
+  <div class="card" ng-hide="!isStudent">
+      <div class="item item-text-wrap" novalidate>
+        <h1 class="notif">Filter Notifications</h1>
+        <div class="activityPicker">
+            <select id="s1" ng-model="selectedItem" ng-options="item as item.name for item in subscriptions" class="ng-pristine ng-valid" required>
+              <option value="?" selected="selected">Select a Club</option>
+              <option value="0"></option>
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+            </select>
+        </div>
+      </div>
+  </div>
 
   <!-- List notifications -->
   <div class="list card" ng-repeat="n in notifications| orderByPriority | reverse"> <!-- ng-show="filterSubscriptions($index)" -->
