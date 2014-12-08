@@ -3,6 +3,8 @@
 angular.module('MyApp.controllers')
 .value('BASE_URL', 'https://noticeapp.firebaseio.com/')
 .controller('DashboardCtrl', function($firebase, $scope, Auth, md5, $ionicModal, User, $http) {
+    
+    // Initialize reference to Firebase object
     var noticeRef = new Firebase('https://trynotice.firebaseio.com/notifications');
     $scope.notifications = $firebase(noticeRef);  	
     
@@ -11,6 +13,7 @@ angular.module('MyApp.controllers')
     $scope.activityName = '';
     $scope.isStudent = /([\._a-zA-Z0-9-]+@students.d211.org)/.test($scope.email);
     
+    // Get users 
     $http.get(User.getSubscriptions())
     .success(function(data) {
         if(data == null) {
@@ -18,9 +21,7 @@ angular.module('MyApp.controllers')
             { id: 2, name: 'Basketball', color: '#4a87ee', isChecked: false },	
             { id: 3, name: 'Horticulture Club', color: '#ef4e3a', isChecked: false },		
             { id: 4, name: 'Science Olympiad', color: '#8a6de9', isChecked: false }];
-        }
-
-        else {
+        } else {
             $scope.subscriptions = data;
         }
     });
