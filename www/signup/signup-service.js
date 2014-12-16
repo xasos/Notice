@@ -1,5 +1,6 @@
 'use strict';
 
+// Module generates a random password for resetting/creating an account
 angular.module('MyApp.services').service('Signup', function() {
   this.randomPassword = function() {
     var chars = 'abdfhijkprstuvwxyzACGHJKLMNPQRUVWXY34679';
