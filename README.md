@@ -7,7 +7,7 @@ Notice is a push notification system for school/club announcements built in Angu
 
 Built as part of the Mobile App Development Course (M257).
 
-## Getting Started
+## Get Started
 ```sh
 $ git clone https://github.com/xasos/Notice
 $ cd Notice
