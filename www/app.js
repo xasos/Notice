@@ -37,7 +37,7 @@ angular.module('MyApp', [
             }
         };
 
-        // Route states when requested/navigated to
+        // Define states when requested/navigated to
         $stateProvider
             .state('app', {
                 url: '/app',

@@ -20,7 +20,6 @@ angular.module('MyApp.controllers')
           .then(User.loadCurrentUser)
           .then(redirectBasedOnStatus)
           .catch(handleError);
-          
     };
 
     function redirectBasedOnStatus() {
@@ -33,6 +32,7 @@ angular.module('MyApp.controllers')
       }
     }
 
+    // Error handler for Firebase login
     function handleError(error) {
       switch (error.code) {
         case 'INVALID_EMAIL':
